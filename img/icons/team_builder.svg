@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24.881" height="24.894" viewBox="0 0 24.881 24.894">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Clip_8" data-name="Clip 8" d="M0,0H1.3V11.284H0Z" transform="translate(0.616 0.416)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Group_12" data-name="Group 12" transform="translate(-0.227 -0.226)">
+    <g id="Group_12-2" data-name="Group 12">
+      <path id="Stroke_1" data-name="Stroke 1" d="M6.309,9.335H3.025A3.025,3.025,0,0,1,0,6.31V3.026A3.025,3.025,0,0,1,3.025,0H6.309A3.026,3.026,0,0,1,9.334,3.026V6.31A3.025,3.025,0,0,1,6.309,9.335Z" transform="translate(0.982 0.98)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.509"/>
+      <path id="Stroke_3" data-name="Stroke 3" d="M6.309,9.335H3.025A3.025,3.025,0,0,1,0,6.31V3.026A3.025,3.025,0,0,1,3.025,0H6.309A3.026,3.026,0,0,1,9.334,3.026V6.31A3.025,3.025,0,0,1,6.309,9.335Z" transform="translate(14.799 0.98)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.509"/>
+      <path id="Stroke_5" data-name="Stroke 5" d="M6.309,9.335H3.025A3.025,3.025,0,0,1,0,6.31V3.026A3.025,3.025,0,0,1,3.025,0H6.309A3.026,3.026,0,0,1,9.334,3.026V6.31A3.025,3.025,0,0,1,6.309,9.335Z" transform="translate(0.982 14.798)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.509"/>
+      <g id="Group_9" data-name="Group 9" transform="translate(18.2 13.42)">
+        <path id="Clip_8-2" data-name="Clip 8" d="M0,0H1.3V11.284H0Z" transform="translate(0.616 0.416)" fill="none"/>
+        <g id="Group_9-2" data-name="Group 9" clip-path="url(#clip-path)">
+          <path id="Stroke_7" data-name="Stroke 7" d="M.65,0V11.284" transform="translate(0.616 0.416)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.509"/>
+        </g>
+      </g>
+      <path id="Stroke_10" data-name="Stroke 10" d="M11.284.65H0" transform="translate(13.824 18.828)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.509"/>
+    </g>
+  </g>
+</svg>
