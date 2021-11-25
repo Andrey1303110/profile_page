@@ -284,6 +284,10 @@ section .data_part {
   line-height: 1.31666vw;
 }
 
+section .data_part.bottom_padding_0 {
+  padding-bottom: 0;
+}
+
 section .main_conext_block {
   margin-bottom: 1.64582vw;
 }
@@ -437,8 +441,12 @@ section .team_block {
   margin-bottom: 2vw;
 }
 
+section .team_block .team {
+  margin-right: 1.31666vw;
+}
+
 section .team_block div {
-  width: 22.38315vw;
+  width: 22.05398vw;
   border: 0.05vw solid #1E92FE;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -446,15 +454,6 @@ section .team_block div {
   padding: 0.46875vw 0.9375vw 0.573vw;
   font-size: 0.9375vw;
   line-height: 1.3vw;
-}
-
-section .team_block div.not_active {
-  border-color: #D2D2D2;
-}
-
-section .team_block div.not_active p {
-  -webkit-filter: grayscale(1) opacity(0.3);
-          filter: grayscale(1) opacity(0.3);
 }
 
 section .team_block div p:nth-child(1) {
@@ -1011,6 +1010,96 @@ section .right_section .title_part {
   color: #ffffff;
 }
 
+section .right_section .people_viewed_block .title_part {
+  background: white;
+  color: black;
+}
+
+section .right_section .people_viewed_block .data_part {
+  padding: 0;
+}
+
+section .right_section .people_viewed_block .item {
+  padding: 0.98749vw;
+}
+
+section .right_section .people_viewed_block .item:not(:last-child) {
+  padding-bottom: 1.31666vw;
+  border-bottom: 0.06583vw solid #E8ECF4;
+}
+
+section .right_section .people_viewed_block .item .right .add {
+  width: 1.97498vw;
+  height: 1.97498vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: solid 0.06583vw #1E92FE;
+  border-radius: .25vw;
+}
+
+section .right_section .people_viewed_block .item .right .add img {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+section .right_section .starlight_block {
+  position: relative;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.0001)), color-stop(31.28%, rgba(0, 0, 0, 0.0574588)), to(#000000)), url("../img/banner.jpg") no-repeat center center;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.0574588) 31.28%, #000000 100%), url("../img/banner.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 11.8499vw 1.05332vw 0.92166vw;
+}
+
+section .right_section .starlight_block p {
+  color: white;
+}
+
+section .right_section .starlight_block p:nth-child(1) {
+  margin-bottom: 2.96248vw;
+  font-size: 1.51415vw;
+  font-weight: 900;
+}
+
+section .right_section .starlight_block p:nth-child(2) {
+  width: 70%;
+  font-size: 1.51415vw;
+  line-height: 1.84332vw;
+  font-weight: bold;
+}
+
+section .right_section .starlight_block p:nth-child(3) {
+  width: 70%;
+  font-size: 1.51415vw;
+  line-height: 1.84332vw;
+  font-weight: bold;
+}
+
+section .right_section .starlight_block p:last-child {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  text-transform: uppercase;
+  font-size: 0.78999vw;
+}
+
+section .right_section .starlight_block button {
+  background: transparent;
+  margin-top: 2.30415vw;
+  width: 40.5%;
+  height: 3.94997vw;
+  text-align: center;
+  color: white;
+  font-size: 0.85583vw;
+  border: 0.06583vw solid white;
+}
+
 section .right_section .data_part {
   padding-left: 0.98749vw;
   padding-right: 0.98749vw;
@@ -1071,5 +1160,132 @@ section .right_section .data_part .item div p:nth-child(2) {
   font-size: 0.78999vw;
   line-height: 1.05332vw;
   color: #202631;
+}
+
+footer {
+  background: #00193F;
+  padding: 2.10665vw 8.55826vw 1.64582vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer p, footer a {
+  color: white;
+}
+
+footer .navs_links {
+  width: 52.66623vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .navs_links div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .blocks:nth-child(1) {
+  margin-bottom: 1.64582vw;
+}
+
+footer .blocks:nth-child(1) p {
+  font-size: 1.31666vw;
+  font-weight: bold;
+  margin-bottom: 0.98749vw;
+}
+
+footer .blocks:nth-child(1) a {
+  font-size: 0.98749vw;
+  margin-bottom: 0.78999vw;
+}
+
+footer .blocks:nth-child(2) .flex_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+footer .blocks:nth-child(2) .flex_row .descript {
+  width: 14.81238vw;
+  line-height: 1.71165vw;
+}
+
+footer .blocks:nth-child(2) .navs_links {
+  width: 26.33311vw;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  margin-right: 3.29164vw;
+}
+
+footer .blocks:nth-child(2) .navs_links a {
+  padding-right: 0.65833vw;
+  line-height: 1.38249vw;
+}
+
+footer .blocks:nth-child(2) .navs_links a:not(:last-child) {
+  border-right: 0.06583vw solid white;
+}
+
+footer .blocks:nth-child(2) .navs_links a:not(:first-child) {
+  padding: 0 0.65833vw;
+}
+
+footer .blocks:nth-child(2) p {
+  font-size: 0.92166vw;
+  margin-bottom: 0.98749vw;
+}
+
+footer .blocks:nth-child(2) a {
+  font-size: 0.92166vw;
+}
+
+footer .blocks .sn_icons {
+  width: 7.50494vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .blocks .sn_icons img {
+  width: 2.10665vw;
 }
 /*# sourceMappingURL=main.css.map */
