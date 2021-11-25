@@ -46,10 +46,6 @@ button {
   cursor: pointer;
 }
 
-.white_bg {
-  background-color: white;
-}
-
 body {
   background-color: #F2F4F8;
 }
@@ -99,7 +95,7 @@ header .header_left .logo img {
 }
 
 header .header_left input {
-  width: 10vw;
+  width: 8.88743vw;
   font-size: 0.73vw;
   padding: 0.725vw 0.725vw 0.68vw 0.94vw;
   border: 0.05vw solid #202631;
@@ -126,7 +122,7 @@ header .header_left img.search {
 }
 
 header nav {
-  font-size: 0.92166vw;
+  font-size: 0.85583vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -140,7 +136,7 @@ header nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 38.84134vw;
+  width: 35.5497vw;
 }
 
 header nav li {
@@ -193,27 +189,29 @@ header .header_right .notification {
   width: 1.31vw;
   height: 1.38vw;
   margin-right: 1vw;
+  position: relative;
 }
 
 header .header_right .notification img {
+  position: absolute;
+  top: 10%;
   width: 100%;
 }
 
-header .header_right .notification img:after {
-  content: "";
+header .header_right .notification div {
   position: absolute;
   top: 0;
   right: 0;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 0.573vw;
-  height: 0.573vw;
+  -webkit-transform: translate(50%);
+          transform: translate(50%);
+  width: 0.6vw;
+  height: 0.6vw;
   border-radius: 50%;
   background-color: #FF6C6C;
 }
 
 header .header_right .profile_name {
-  font-size: 0.92166vw;
+  font-size: 0.85583vw;
   font-weight: bold;
   line-height: 1.146vw;
   padding-right: 1.146vw;
@@ -268,7 +266,8 @@ section .title_part {
 }
 
 section .title_part.outside {
-  margin-left: -1.38249vw;
+  padding-left: 0;
+  margin-left: 0;
   font-size: 1.38249vw;
   line-height: 2.17248vw;
   background: #F2F4F8;
@@ -279,7 +278,7 @@ section .interact_content {
 }
 
 section .data_part {
-  padding: 1.44832vw 0;
+  padding: 1.05332vw 0;
   font-size: 0.92166vw;
   line-height: 1.31666vw;
 }
@@ -288,7 +287,8 @@ section .data_part.bottom_padding_0 {
   padding-bottom: 0;
 }
 
-section .main_conext_block {
+section .main_context_block {
+  background-color: white;
   margin-bottom: 1.64582vw;
 }
 
@@ -334,9 +334,19 @@ section .main {
           flex-direction: row;
 }
 
+section .main_context_block {
+  -webkit-box-shadow: 0 0.10533vw 0.46083vw rgba(0, 0, 0, 0.14);
+          box-shadow: 0 0.10533vw 0.46083vw rgba(0, 0, 0, 0.14);
+  border-radius: 0.23041vw;
+}
+
 section .left_section {
   width: 46.41211vw;
   margin-left: 5vw;
+}
+
+section .left_section .main_context_block:last-child {
+  margin-bottom: 6.58328vw;
 }
 
 section .left_section .top_buttons {
@@ -643,6 +653,10 @@ section .profile-check_block .buttons button:nth-child(2) {
   width: 10.53325vw;
 }
 
+section .dashboard_block .main_context_block:last-child {
+  margin-bottom: 1.64582vw;
+}
+
 section .dashboard_block .blocks {
   width: 100%;
   display: -webkit-box;
@@ -836,6 +850,10 @@ section .talent_block .interact_content .middle {
   margin: 0 auto;
 }
 
+section .talent_block .interact_content .middle img {
+  width: 50%;
+}
+
 section .talent_block .interact_content .time_duration {
   font-size: 0.78999vw;
   line-height: 1.05332vw;
@@ -1008,6 +1026,7 @@ section .right_section {
 section .right_section .title_part {
   background-color: #1E92FE;
   color: #ffffff;
+  border-radius: .25vw;
 }
 
 section .right_section .people_viewed_block .title_part {
@@ -1045,6 +1064,7 @@ section .right_section .people_viewed_block .item .right .add {
 }
 
 section .right_section .people_viewed_block .item .right .add img {
+  width: 0.72416vw;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
@@ -1092,7 +1112,7 @@ section .right_section .starlight_block p:last-child {
 section .right_section .starlight_block button {
   background: transparent;
   margin-top: 2.30415vw;
-  width: 40.5%;
+  width: 11.52074vw;
   height: 3.94997vw;
   text-align: center;
   color: white;
@@ -1141,7 +1161,7 @@ section .right_section .data_part .item .avatar img {
 }
 
 section .right_section .data_part .item div:nth-child(2) {
-  width: 35%;
+  width: 10.00658vw;
 }
 
 section .right_section .data_part .item div:last-child {
@@ -1217,6 +1237,10 @@ footer .blocks {
 
 footer .blocks:nth-child(1) {
   margin-bottom: 1.64582vw;
+}
+
+footer .blocks:nth-child(1) img {
+  width: 14.48321vw;
 }
 
 footer .blocks:nth-child(1) p {

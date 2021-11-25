@@ -42,10 +42,6 @@ button {
     cursor: pointer;
 }
 
-.white_bg {
-    background-color: white;
-}
-
 body {
     background-color: #F2F4F8;
 }
@@ -73,7 +69,7 @@ header {
             }
         }
         input {
-            width: 10vw;
+            width: 135/$width*100vw;
             font-size: 0.73vw;
             padding: 0.725vw 0.725vw 0.68vw 0.94vw;
             border: 0.05vw solid #202631;
@@ -93,12 +89,12 @@ header {
         }
     }
     nav {
-        font-size: 14/$width*100vw;
+        font-size: 13/$width*100vw;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        width: 590/$width*100vw;
+        width: 540/$width*100vw;
         li {
             display: block;
             text-align: center;
@@ -134,23 +130,25 @@ header {
             width: 1.31vw;
             height: 1.38vw;
             margin-right: 1vw;
+            position: relative;
             img {
+                position: absolute;
+                top: 10%;
                 width: 100%;
             }
-            img:after {
-                content: "";
+            div {
                 position: absolute;
                 top: 0;
                 right: 0;
-                transform: translate(-50%, -50%);
-                width: 0.573vw;
-                height: 0.573vw;
+                transform: translate(50%);
+                width: 0.6vw;
+                height: 0.6vw;
                 border-radius: 50%;
                 background-color: #FF6C6C;
             }
         }
         .profile_name {
-            font-size: 14/$width*100vw;
+            font-size: 13/$width*100vw;
             font-weight: bold;
             line-height: 1.146vw;
             padding-right: 1.146vw;
@@ -190,7 +188,8 @@ section {
         padding: 14/$width*100vw 23/$width*100vw 11/$width*100vw 21/$width*100vw;
         border-bottom: 1/$width*100vw solid #E8ECF4;;
         &.outside {
-            margin-left: -21/$width*100vw;
+            padding-left: 0;
+            margin-left: 0;
             font-size: 21/$width*100vw;
             line-height: 33/$width*100vw;
             background: #F2F4F8;
@@ -200,14 +199,15 @@ section {
         width: 205/$width*100vw;
     }
     .data_part {
-        padding: 22/$width*100vw 0;
+        padding: 16/$width*100vw 0;
         font-size: 14/$width*100vw;
         line-height: 20/$width*100vw;
         &.bottom_padding_0 {
             padding-bottom: 0;
         }
     }
-    .main_conext_block {
+    .main_context_block {
+        background-color: white;
         margin-bottom: 25/$width*100vw;
     }
     .with_footer {
@@ -243,9 +243,18 @@ section {
         display: flex;
         flex-direction: row;
     }
+    .main_context_block {
+        box-shadow: 0 1.6/$width*100vw 7/$width*100vw rgba(0, 0, 0, 0.14);
+        border-radius: 3.5/$width*100vw;
+    }
     .left_section {
         width: 705/$width*100vw;
         margin-left: 5vw;
+        .main_context_block {
+            &:last-child {
+                margin-bottom: 100/$width*100vw;
+            }
+        }
         .top_buttons {
             display: flex;
             flex-direction: row;
@@ -464,6 +473,11 @@ section {
         }
     }
     .dashboard_block {
+        .main_context_block {
+            &:last-child {
+                margin-bottom: 25/$width*100vw;
+            }
+        }
         .blocks {
             width: 100%;
             display: flex;
@@ -589,6 +603,9 @@ section {
                 margin-bottom: 5.5/$width*100vw;
                 cursor: pointer;
                 margin: 0 auto;
+                img {
+                    width: 50%;
+                }
             }
             .time_duration {
                 font-size: 12/$width*100vw;
@@ -716,6 +733,7 @@ section {
         .title_part {
             background-color: #1E92FE;
             color: #ffffff;
+            border-radius: .25vw;
         }
         .people_viewed_block {
             .title_part {
@@ -741,6 +759,7 @@ section {
                         border: solid 1/$width*100vw #1E92FE;
                         border-radius: .25vw;
                         img {
+                            width: 11/$width*100vw;
                             transform: rotate(-45deg);
                         }
                     }
@@ -782,7 +801,7 @@ section {
             button {
                 background: transparent;
                 margin-top: 35/$width*100vw;
-                width: 40.5%;
+                width: 175/$width*100vw;
                 height: 60/$width*100vw;
                 text-align: center;
                 color: white;
@@ -818,7 +837,7 @@ section {
                 }
                 div {
                     &:nth-child(2) {
-                        width: 35%;
+                        width: 152/$width*100vw;
                     }
                     &:last-child {
                         margin-left: auto;
@@ -866,6 +885,9 @@ footer {
         flex-direction: row;
         justify-content: space-between;
         &:nth-child(1) {
+            img {
+                width: 220/$width*100vw;
+            }
             margin-bottom: 25/$width*100vw;
             p {
                 font-size: 20/$width*100vw;
