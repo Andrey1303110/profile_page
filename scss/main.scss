@@ -941,3 +941,26 @@ footer {
         }
     }
 }
+
+@media screen and (max-width: 425px) {
+    $width: 425;
+    header, section {
+        padding: 10/$width*100vw;
+    }
+    header {
+        margin: 15/$width*100vw 10/$width*100vw 0;
+    }
+    section {
+        width: auto;
+        .main {
+            flex-direction: column;
+            .left_section, .right_section {
+                width: 100%;
+                margin: 0;
+            }
+            .top_buttons {
+                display: none;
+            }
+        }
+    }
+}

@@ -1312,4 +1312,29 @@ footer .blocks .sn_icons {
 footer .blocks .sn_icons img {
   width: 2.10665vw;
 }
+
+@media screen and (max-width: 425px) {
+  header, section {
+    padding: 2.35294vw;
+  }
+  header {
+    margin: 3.52941vw 2.35294vw 0;
+  }
+  section {
+    width: auto;
+  }
+  section .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section .main .left_section, section .main .right_section {
+    width: 100%;
+    margin: 0;
+  }
+  section .main .top_buttons {
+    display: none;
+  }
+}
 /*# sourceMappingURL=main.css.map */
