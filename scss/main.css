@@ -534,7 +534,7 @@ section .profile-check_block .title_part .arrows_block .arrows {
   border: none;
   padding: 0 0.26333vw;
   background-color: inherit;
-  visibility: collapse;
+  cursor: pointer;
 }
 
 section .profile-check_block .title_part .arrows_block .arrows img {
@@ -1469,6 +1469,7 @@ footer .blocks .sn_icons img {
     font-size: 5.17647vw;
     line-height: 6.11765vw;
     margin-bottom: 1.17647vw;
+    font-weight: bold;
   }
   section .welcome_block .info {
     -webkit-box-pack: start;

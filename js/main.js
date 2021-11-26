@@ -15,7 +15,9 @@ $(document).ready(function(){
     });
     $('.profile_sliders').slick({
         arrows: true,
-        slidesToShow: 1
+        slidesToShow: 1,
+        prevArrow: $('.arrows.left'),
+        nextArrow: $('.arrows.right')
     });
 
     $('.play_audio').on('click', function() {

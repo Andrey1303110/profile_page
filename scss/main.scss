@@ -380,7 +380,7 @@ section {
                     border: none;
                     padding: 0 4/$width*100vw;
                     background-color: inherit;
-                    visibility: collapse;
+                    cursor: pointer;
                     img {
                         height: 100%;
                     }
@@ -1083,6 +1083,7 @@ footer {
                 font-size: 22/$width*100vw;
                 line-height: 26/$width*100vw;
                 margin-bottom: 5/$width*100vw;
+                font-weight: bold;
             }
             .info {
                 justify-content: start;
