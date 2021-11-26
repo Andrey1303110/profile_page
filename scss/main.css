@@ -278,7 +278,8 @@ section .title_part.outside {
 }
 
 section .interact_content {
-  width: 13.49572vw;
+  width: 12.17907vw;
+  border-radius: .35vw;
 }
 
 section .data_part {
@@ -882,8 +883,19 @@ section .promotional_block .photos {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-left: 1.57999vw;
-  padding-right: 1.57999vw;
+  padding-left: 0.92166vw;
+  padding-right: 0.92166vw;
+  position: relative;
+}
+
+section .promotional_block .photos .slick-slide div {
+  margin-bottom: 0.98749vw;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+section .promotional_block .photos .slick-slide div:nth-child(3n) {
+  margin-right: 0;
 }
 
 @media screen and (min-width: 426px) {

@@ -202,3 +202,12 @@
     opacity: .75;
     color: black;
 }
+
+.slick-dotted.slick-slider {
+    margin-bottom: 0px;
+}
+
+.slick-dots {
+    position: relative;
+    top: -.5vw;
+}

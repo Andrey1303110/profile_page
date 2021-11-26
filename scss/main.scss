@@ -199,7 +199,8 @@ section {
         }
     }
     .interact_content {
-        width: 205/$width*100vw;
+        width: 185/$width*100vw;
+        border-radius: .35vw;
     }
     .data_part {
         padding: 16/$width*100vw 0;
@@ -625,8 +626,17 @@ section {
             flex-direction: row;
             justify-content: space-between;
             flex-wrap: wrap;
-            padding-left: 24/$width*100vw;
-            padding-right: 24/$width*100vw;
+            padding-left: 14/$width*100vw;
+            padding-right: 14/$width*100vw;
+            position: relative;
+            .slick-slide div {
+                margin-bottom: 15/$width*100vw;
+                margin-right: 10px;
+                margin-left: 10px;
+                &:nth-child(3n) {
+                    margin-right: 0;
+                }
+            }
             img {
                 @media screen and (min-width: 426px) {
                     &:nth-child(1n+3), &:nth-child(2n+3), &:nth-child(3n+3) {
