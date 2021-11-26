@@ -458,17 +458,20 @@ section .team_block {
 
 section .team_block .team {
   margin-right: 1.31666vw;
+  border-radius: 2vw;
+}
+
+section .team_block .lead {
+  border-radius: 2vw;
 }
 
 section .team_block div {
   width: 22.05398vw;
   border: 0.05vw solid #1E92FE;
+  border-radius: 2vw;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  border-radius: 0.36vw;
-  padding: 0.46875vw 0.9375vw 0.573vw;
-  font-size: 0.9375vw;
-  line-height: 1.3vw;
+          box-sizing: border-box;
+  padding: 0.13167vw 0.26333vw 0.16458vw;
 }
 
 section .team_block div p:nth-child(1) {
@@ -884,12 +887,13 @@ section .promotional_block .photos {
   padding-right: 1.57999vw;
 }
 
-section .promotional_block .photos img:nth-child(1n+3), section .promotional_block .photos img:nth-child(2n+3), section .promotional_block .photos img:nth-child(3n+3) {
-  margin-top: 1.18499vw;
-}
-
-section .promotional_block .photos img:nth-child(1), section .promotional_block .photos img:nth-child(2), section .promotional_block .photos img:nth-child(3) {
-  margin-top: 0;
+@media screen and (min-width: 426px) {
+  section .promotional_block .photos img:nth-child(1n+3), section .promotional_block .photos img:nth-child(2n+3), section .promotional_block .photos img:nth-child(3n+3) {
+    margin-top: 1.18499vw;
+  }
+  section .promotional_block .photos img:nth-child(1), section .promotional_block .photos img:nth-child(2), section .promotional_block .photos img:nth-child(3) {
+    margin-top: 0;
+  }
 }
 
 section .featured_block .data_part {
@@ -1335,6 +1339,7 @@ footer .blocks .sn_icons img {
     height: 100%;
     margin: 3.52941vw 2.35294vw 0;
     padding: 2.11765vw 3.29412vw;
+    border-radius: 1.33vw;
   }
   header .avatar_header {
     height: 7.52941vw;
@@ -1374,6 +1379,10 @@ footer .blocks .sn_icons img {
   }
   section .main_context_block {
     margin-bottom: 5.41176vw;
+    border-radius: 1.33vw;
+  }
+  section .interact_content {
+    border-radius: 1.33vw;
   }
   section .edit {
     height: 3.76471vw;
@@ -1399,6 +1408,7 @@ footer .blocks .sn_icons img {
   }
   section .top .bg_top {
     height: 28vw;
+    border-radius: 1.33vw;
   }
   section .top .bg_top .avatar {
     width: 20vw;
@@ -1552,13 +1562,14 @@ footer .blocks .sn_icons img {
   section .promotional_block .photos {
     padding: 2.11765vw 3.05882vw;
   }
-  section .promotional_block .photos img {
+  section .promotional_block .photos .interact_content {
     width: 42.35294vw;
+    margin-top: 4.70588vw;
   }
-  section .promotional_block .photos img:nth-child(1), section .promotional_block .photos img:nth-child(2) {
+  section .promotional_block .photos .interact_content:nth-child(1), section .promotional_block .photos .interact_content:nth-child(2) {
     margin-top: 0;
   }
-  section .promotional_block .photos img:not(:nth-child(1)), section .promotional_block .photos img:not(:nth-child(2)) {
+  section .promotional_block .photos .interact_content:nth-child(3) {
     margin-top: 4.70588vw;
   }
   section .featured_block .data_part .content {
@@ -1653,6 +1664,10 @@ footer .blocks .sn_icons img {
   }
   section .contacts_block .data_part .item .avatar img, section .interests_block .data_part .item .avatar img, section .people_viewed_block .data_part .item .avatar img {
     width: 100%;
+  }
+  section .right_section .title_part {
+    border-top-left-radius: 1.33vw;
+    border-top-right-radius: 1.33vw;
   }
   footer {
     padding: 4.70588vw 5.64706vw 16.47059vw;
