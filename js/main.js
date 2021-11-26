@@ -27,6 +27,18 @@ $(document).ready(function(){
         $(track_name)[0].play();
         $(this).addClass('playing');
     })
+
+    $(document).on("click", "img.edit", function(event) {
+      //event.preventDefault();
+      let modal = $(this).attr("alt");
+      $(modal).modal({
+        escapeClose: false,
+        clickClose: false,
+        showClose: false,
+        closeExisting: false
+      });
+      return false;
+    });
 });
 
 
