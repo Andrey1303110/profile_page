@@ -458,24 +458,23 @@ section .team_block {
 
 section .team_block .team {
   margin-right: 1.31666vw;
-  border-radius: 2vw;
+  border-radius: 0.32916vw;
 }
 
 section .team_block .lead {
-  border-radius: 2vw;
+  border-radius: 0.32916vw;
 }
 
 section .team_block div {
   width: 22.05398vw;
   border: 0.05vw solid #1E92FE;
-  border-radius: 2vw;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 0.13167vw 0.26333vw 0.16458vw;
+  padding: 0.65833vw 0.92166vw 0.85583vw;
 }
 
 section .team_block div p:nth-child(1) {
-  font-size: 1.15vw;
+  font-size: 1.18499vw;
   font-weight: bold;
   line-height: 2.2vw;
   color: #1E92FE;

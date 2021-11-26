@@ -330,20 +330,19 @@ section {
         margin-bottom: 2vw;
         .team {
             margin-right: 20/$width*100vw;
-            border-radius: 2vw;
+            border-radius: 5/$width*100vw;
         }
         .lead {
-            border-radius: 2vw;
+            border-radius: 5/$width*100vw;
         }
         div {
             width: 335/$width*100vw;
             border: 0.05vw solid #1E92FE;
-            border-radius: 2vw;
             box-sizing: border-box;
-            padding: 2/$width*100vw 4/$width*100vw 2.5/$width*100vw;
+            padding: 10/$width*100vw 14/$width*100vw 13/$width*100vw;
             p {
                 &:nth-child(1) {
-                    font-size: 1.15vw;
+                    font-size: 18/$width*100vw;
                     font-weight: bold;
                     line-height: 2.2vw;
                     color: #1E92FE;
