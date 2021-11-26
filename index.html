@@ -179,11 +179,55 @@
 
                         </div>
                     </div>
-                    <p class="down_text">Add an about summary</p>
-                    <p class="down_text">Summary is the #1 thing music professionals look at while viewing profiles</p>
-                    <div class="buttons">
-                        <button>Not now</button>
-                        <button>Add summary</button>
+                    <div class="profile_sliders">
+                        <div class="profile_slide">
+                            <p class="down_text">Where do you currently work?</p>
+                            <p class="down_text">Over Thousands of people search by current position on Musiclinkup every week</p>
+                            <div class="buttons">
+                                <button>Not now</button>
+                                <button>Add current position</button>
+                            </div>
+                        </div>
+                        <div class="profile_slide">
+                            <p class="down_text">Which university or school did you attend?</p>
+                            <p class="down_text">Add your school so that classmates and alumni can easily find you</p>
+                            <div class="buttons">
+                                <button>Not now</button>
+                                <button>Add education</button>
+                            </div>
+                        </div>
+                        <div class="profile_slide">
+                            <p class="down_text">Add a profile photo to help others recognize you</p>
+                            <p class="down_text">Members with a photo get up to 21x more profile views</p>
+                            <div class="buttons">
+                                <button>Not now</button>
+                                <button>Add Photo</button>
+                            </div>
+                        </div>
+                        <div class="profile_slide">
+                            <p class="down_text"><span>Alison</span>, help people you worked with in the past easily find you</p>
+                            <p class="down_text">Members with more than 5 skills are 27X more likely to be discovered in searches by recruiters</p>
+                            <div class="buttons">
+                                <button>Not now</button>
+                                <button>Add 5 skills</button>
+                            </div>
+                        </div>
+                        <div class="profile_slide">
+                            <p class="down_text">Talent Demonstration</p>
+                            <p class="down_text">Showcase your talent to recruiters Add music or instrumentals to your profile</p>
+                            <div class="buttons">
+                                <button>Not now</button>
+                                <button>Add Talent</button>
+                            </div>
+                        </div>
+                        <div class="profile_slide">
+                            <p class="down_text">Add an about summary</p>
+                            <p class="down_text">Summary is the #1 thing music professionals look at while viewing profiles</p>
+                            <div class="buttons">
+                                <button>Not now</button>
+                                <button>Add summary</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -272,7 +316,7 @@
                                     <img class="not_mobile" src="/img/company_logo/company_154178.webp" alt="">
                                 </div>
                                 <div class="middle">
-                                    <img src="/img/icons/triangle.svg" alt="audio">
+                                    <img class="play_audio" src="/img/icons/triangle.svg" alt="audio">
                                 </div>
                                 <p class="time_duration not_mobile">05:23</p>
                             </div>
@@ -284,7 +328,7 @@
                                     <img class="not_mobile" src="/img/company_logo/company_154149.webp" alt="">
                                 </div>
                                 <div class="middle">
-                                    <img src="/img/icons/triangle.svg" alt="audio">
+                                    <img class="play_audio" src="/img/icons/triangle.svg" alt="audio">
                                 </div>
                                 <p class="time_duration not_mobile">05:23</p>
                             </div>
@@ -296,7 +340,7 @@
                                     <img class="not_mobile" src="/img/company_logo/company_154149.webp" alt="">
                                 </div>
                                 <div class="middle">
-                                    <img src="/img/icons/triangle.svg" alt="audio">
+                                    <img class="play_audio" src="/img/icons/triangle.svg" alt="audio">
                                 </div>
                                 <p class="time_duration not_mobile">05:23</p>
                             </div>
@@ -308,7 +352,7 @@
                                     <img class="not_mobile" src="/img/company_logo/company_154149.webp" alt="">
                                 </div>
                                 <div class="middle">
-                                    <img src="/img/icons/triangle.svg" alt="audio">
+                                    <img class="play_audio" src="/img/icons/triangle.svg" alt="audio">
                                 </div>
                                 <p class="time_duration not_mobile">05:23</p>
                             </div>
@@ -685,12 +729,14 @@
 
     </footer>
 
+    <audio id="audio" src="/audio/audio.mp3"></audio>
+
     <script src="/js/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
     <script src="/slick/slick.min.js"></script>
     <script src="/js/main.js"></script>
 </body>
-  <div class="modal popup_blc edit_profile" id="edit_profile">
+<div class="modal popup_blc edit_profile" id="edit_profile">
     <p class="title">
     Edit Profile
     </p>

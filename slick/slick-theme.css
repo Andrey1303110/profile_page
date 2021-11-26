@@ -88,7 +88,10 @@
 }
 .slick-prev:before
 {
-    content: '←';
+    content: url(../img/icons/arrow_prev.svg);
+    position: absolute;
+    top: -10.1vw;
+    right: -40.8vw;
 }
 [dir='rtl'] .slick-prev:before
 {
@@ -106,7 +109,10 @@
 }
 .slick-next:before
 {
-    content: '→';
+    content: url(../img/icons/arrow_next.svg);
+    position: absolute;
+    top: -10.1vw;
+    right: 2vw;
 }
 [dir='rtl'] .slick-next:before
 {

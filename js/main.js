@@ -6,14 +6,23 @@ $(document).ready(function(){
         rows: 2,
         responsive: [
         {
-          breakpoint: 478,
+          breakpoint: 426,
           settings: {
-            slidesPerRow: 1,
-            rows: 1,
+            slidesToShow: 2,
           }
         }
       ]
     });
+    $('.profile_sliders').slick({
+        arrows: true,
+        slidesToShow: 1
+    });
+
+    $('.play_audio').on('click', function() {
+        let track_name = this.alt;
+        $(track_name)[0].play();
+        $(this).addClass('playing');
+    })
 });
 
 

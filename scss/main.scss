@@ -330,18 +330,16 @@ section {
         justify-content: space-between;
         margin-bottom: 2vw;
         .team {
-            margin-right: 20/$width*100vw;
-            border-radius: 5/$width*100vw;
-        }
-        .lead {
-            border-radius: 5/$width*100vw;
+            margin-right: 20/$width*100vw;   
         }
         div {
             width: 335/$width*100vw;
+            border-radius: 5/$width*100vw;
             border: 0.05vw solid #1E92FE;
             box-sizing: border-box;
             padding: 10/$width*100vw 14/$width*100vw 13/$width*100vw;
             p {
+                line-height: 20/$width*100vw;;
                 &:nth-child(1) {
                     font-size: 18/$width*100vw;
                     font-weight: bold;
@@ -351,10 +349,12 @@ section {
                 &:nth-child(2) {
                     color: #202631;
                     margin-bottom: 1vw;
+                    font-size: 14/$width*100vw;
                 }
                 &:nth-child(3) {
                     font-weight: 800;
                     color: #1E92FE;
+                    font-size: 18/$width*100vw;
                 }
             }
         }
@@ -380,6 +380,7 @@ section {
                     border: none;
                     padding: 0 4/$width*100vw;
                     background-color: inherit;
+                    visibility: collapse;
                     img {
                         height: 100%;
                     }
@@ -441,6 +442,14 @@ section {
         .down_text {
             font-size: 15/$width*100vw;
             line-height: 25/$width*100vw;
+            &:nth-child(1) {
+                color: #1E92FE;
+                font-weight: bold;
+                margin-bottom: 7/$width*100vw;
+            }
+            &:nth-child(2) {
+                margin-bottom: 20/$width*100vw;
+            }
         }
         p {
             &:nth-child(3) {
@@ -472,7 +481,8 @@ section {
                 &:nth-child(2) {
                     background-color: #1E92FE;
                     color: white;
-                    width: 160/$width*100vw;
+                    padding: 0 15/$width*100vw;
+                    min-width: fit-content;
                 }
             }
         }
@@ -631,8 +641,8 @@ section {
             position: relative;
             .slick-slide div {
                 margin-bottom: 15/$width*100vw;
-                margin-right: 10px;
-                margin-left: 10px;
+                margin-right: 10/$width*100vw;
+                margin-left: 10/$width*100vw;
                 &:nth-child(3n) {
                     margin-right: 0;
                 }
@@ -1101,6 +1111,7 @@ footer {
             div {
                 width: 100%;
                 padding: 11/$width*100vw 20/$width*100vw 9/$width*100vw;
+                border-radius: 2vw;
                 &:nth-child(1) {
                     margin-bottom: 4vw;
                 }
@@ -1121,6 +1132,9 @@ footer {
             }
         }
         .dashboard_block {
+            .title_part {
+                border: none;
+            }
             margin-bottom: 23/$width*100vw;
             .blocks .bl {
                 padding: 5% 10% 3%;
@@ -1192,7 +1206,7 @@ footer {
             }
         }
         .promotional_block .photos {
-            padding: 9/$width*100vw 13/$width*100vw;
+            padding: 9/$width*100vw 2/$width*100vw;
             .interact_content {
                 width: 180/$width*100vw;
                 margin-top: 20/$width*100vw;
