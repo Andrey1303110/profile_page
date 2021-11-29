@@ -36,9 +36,9 @@
                 <img src="/img/icons/network.svg" alt="">
                 <a href="index.html">Network</a>
             </li>
-            <li class="elem_with_dropdown">
+            <li class="elem_with_dropdown work">
                 <img src="/img/icons/work.svg" alt="">
-                <ul class="sub_work">
+                <ul class="sub_work drop-down">
                     <li><img src="/img/icons/work_items.svg" alt=""><a href="">Projects</a></li>
                     <li><img src="/img/icons/work_items.svg" alt=""><a href="">Jobs</a></li>
                     <li><img src="/img/icons/work_items.svg" alt=""><a href="">Contacts</a></li>
@@ -66,48 +66,46 @@
             </a>
             <img class="avatar not_mobile" src="/img/Bitmap.jpg" alt="">
             <p class="profile_name not_mobile elem_with_dropdown">Alison Doe</p>
-            <ul class="profile_info__list not_mobile">
-                <div class="drop_down_profile_menu">
-                    <li>
-                        <p class="profile_name">Alison Doe</p>
-                        <a class="title" href="/">view profile</a>
-                    </li>
-                    <li>
-                        <p class="title">account</p>
-                        <ul>
-                            <li>
-                                <a href="/">Settings & Privacy</a>
-                            </li>
-                            <li>
-                                <a href="/">Manage Account</a>
-                            </li>
-                            <li>
-                                <a href="/">Job Postings</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <p class="title">manage</p>
-                        <ul>
-                            <li>
-                                <a href="/">Create a Company Page</a>
-                            </li>
-                            <li>
-                                <a href="/">Company: Alice Info</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <ul>
-                            <li>
-                                <a href="">Help Center</a>
-                            </li>
-                            <li>
-                                <a href="">Sign Out</a>
-                            </li>
-                        </ul>
-                    </li>
-                </div>
+            <ul class="profile_info__list not_mobile drop-down drop_down_profile_menu">
+                <li class="block">
+                    <p class="profile_name">Alison Doe</p>
+                    <a class="title" href="/">view profile</a>
+                </li>
+                <li class="block">
+                    <p class="title">account</p>
+                    <ul>
+                        <li>
+                            <a href="/">Settings & Privacy</a>
+                        </li>
+                        <li>
+                            <a href="/">Manage Account</a>
+                        </li>
+                        <li>
+                            <a href="/">Job Postings</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="block">
+                    <p class="title">manage</p>
+                    <ul>
+                        <li>
+                            <a href="/">Create a Company Page</a>
+                        </li>
+                        <li>
+                            <a href="/">Company: Alice Info</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="block">
+                    <ul>
+                        <li>
+                            <a href="">Help Center</a>
+                        </li>
+                        <li>
+                            <a href="">Sign Out</a>
+                        </li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </header>
@@ -125,12 +123,35 @@
             <div class="left_section">
                 <div class="top_buttons">
                     <div class="button_add not_mobile">
-                        <p>Add Profile Section</p>
+                        <p>Add Profile Section<span class="dropdown">▼</span></p>
                     </div>
                     <div class="button_more not_mobile">
                         <p>More</p>
                     </div>
                     <img class="edit" src="/img/icons/edit.svg" alt="#edit_profile">
+                    <div class="drop-down main">
+                        <div class="dropdown">
+                            <p class="title">about</p>
+                            <div class="drop-down section">
+                                <p>Summary</p>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <p class="title">featured</p>
+                            <div class="drop-down section">
+                                <p>Posts</p>
+                                <p>Articles</p>
+                                <p>Links</p>
+                                <p>Media</p>
+                            </div>
+                        </div>
+                        <div class="dropdown">
+                            <p class="title">Skills</p>
+                            <div class="drop-down section">
+                                <p>Skills</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="welcome_block">
@@ -139,7 +160,7 @@
                         <p>Artist Manager</p>
                         <p>Florida</p>
                         <p>240 connections</p>
-                        <p class="not_mobile">Contact Info</a>
+                        <a class="not_mobile" href='#contact_info_edit'>Contact Info</a>
                     </div>
                 </div>
 
@@ -757,7 +778,8 @@
     </div>
     <a class="profile_photo modal_open" href="#change_picture"><img alt="" src="/img/Bitmap.jpg" /></a><label>First Name*<input placeholder="First Name Here" required="" type="text" /></label><label>Last Name*<input placeholder="Last Name Here" required="" type="text" /></label>
     <div class="button_blc">
-        <input class="button" type="submit" value="Save" /><a class="button blk" href="#" rel="modal:close">Cancel</a>
+        <input class="button" type="submit" value="Save" />
+        <a class="button blk" href="#" rel="modal:close">Cancel</a>
     </div>
     </form>
 </div>
@@ -777,7 +799,8 @@
         <p class="or">
             OR
         </p>
-        <input accept="image/*" hidden="" id="upload" type="file" /><a class="button upload" href="/" rel="nofollow">Browse Files</a>
+        <input accept="image/*" hidden="" id="upload" type="file" />
+        <a class="button upload" href="/" rel="nofollow">Browse Files</a>
         </div>
     </div>
     <div class="crop_pic"></div>

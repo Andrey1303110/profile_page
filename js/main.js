@@ -38,6 +38,35 @@ $(document).ready(function(){
       });
       return false;
     });
+
+    $(document).on("click", "a", function(event) {
+      let modal = $(this).attr("href");
+      $(modal).modal({
+        escapeClose: false,
+        clickClose: false,
+        showClose: false,
+        closeExisting: false
+      });
+      return false;
+    });
+
+    $('.elem_with_dropdown').on("click", function() {
+      if ($(this).find('.drop-down').length) {
+        $(this).find('.drop-down').slideToggle();
+      }
+      else {
+        $(this).parent().find('.drop-down').slideToggle();
+      }
+    })
+
+    $('.drop-down.main .dropdown').on("click", function() {
+      $(this).parent().find('.drop-down').slideUp();
+      $(this).find('.drop-down').slideToggle();
+    })
+
+    $('.button_add').on("click", function() {
+      $(this).parent().find('.drop-down.main').slideToggle();
+    })
 });
 
 

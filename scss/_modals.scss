@@ -31,7 +31,7 @@
 		margin-right: 1.146vw;
 		font-weight: normal;
 		color: #6A6A75;
-		border-color: #6A6A75;
+    border: #6A6A75 1vw;
 		text-align: center;
 		&:hover {
 			color: #FFFFFF;
@@ -755,15 +755,18 @@
 		padding-right: 0.677vw;
 		text-align: right;
 		.button {
-			width: 5.15625vw;
-			font-size: 0.9375vw;
-			font-weight: bold;
-			line-height: 1.771vw;
-			text-transform: uppercase;
-			outline: none;
-			border-radius: 0.365vw;
-			padding: 0.26vw 0;
-			margin-left: 1.042vw;
+      display: inline-block;
+      font-size: 0.9375vw;
+      font-weight: bold;
+      line-height: 1.25vw;
+      padding: 0.677vw 1.40625vw 0.521vw;
+      background-color: #1E92FE;
+      border: 1px solid #1E92FE;
+      border-radius: 0.26vw;
+      color: #ffffff;
+      white-space: nowrap;
+      -webkit-transition: all 0.3s linear;
+      transition: all 0.3s linear;
 			&:not(.blk) {
 				border: none;
 			}
