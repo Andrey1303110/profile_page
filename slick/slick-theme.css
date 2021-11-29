@@ -99,10 +99,11 @@
 
 /* Dots */
 .slick-dotted.slick-slider {
-  margin-bottom: 0;
+  margin-bottom: 30px;
 }
 
 .slick-dots {
+  position: absolute;
   bottom: -25px;
   list-style: none;
   display: block;
@@ -110,6 +111,16 @@
   padding: 0;
   margin: 0;
   width: 100%;
+}
+
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
 }
 
 .slick-dots li button {
@@ -138,6 +149,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  content: "•";
   width: 20px;
   height: 20px;
   font-family: "slick";
@@ -154,35 +166,4 @@
   color: black;
   opacity: 0.75;
 }
-
-.slick-dots li {
-  position: relative;
-  display: inline-block;
-  height: 1.5vw;
-  border-radius: 1vw;
-  width: 5vw;
-  margin: 0 5px;
-  padding: 0;
-  cursor: pointer;
-  background: #00193F;
-  transition: .4s ease-in-out;
-}
-
-.slick-dots li.slick-active {
-  background: #1E92FE;
-  width: 10vw;
-}
-
-@media screen and (min-width: 425px) {
-  .slick-dots li {
-    height: .5vw;
-    border-radius: .5vw;
-    width: 2vw;
-  }
-  .slick-dots li.slick-active {
-    background: #1E92FE;
-    width: 4vw;
-  }
-}
-
 /*# sourceMappingURL=slick-theme.css.map */

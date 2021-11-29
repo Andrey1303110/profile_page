@@ -9,6 +9,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="shortcut icon" href="/img/icons/iocn.webp" type="image/x-icon">
     <title>Profile</title>
 </head>
 
@@ -35,8 +36,14 @@
                 <img src="/img/icons/network.svg" alt="">
                 <a href="index.html">Network</a>
             </li>
-            <li>
+            <li class="elem_with_dropdown">
                 <img src="/img/icons/work.svg" alt="">
+                <ul class="sub_work">
+                    <li><img src="/img/icons/work_items.svg" alt=""><a href="">Projects</a></li>
+                    <li><img src="/img/icons/work_items.svg" alt=""><a href="">Jobs</a></li>
+                    <li><img src="/img/icons/work_items.svg" alt=""><a href="">Contacts</a></li>
+                    <li><img src="/img/icons/work_items.svg" alt=""><a href="">Writing Sessions</a></li>
+                </ul>
                 <a href="index.html">Work</a>
             </li>
             <li>
@@ -57,10 +64,8 @@
                 <img src="/img/icons/message.svg" alt="">
                 <div></div>
             </a>
-            <div class="not_mobile">
-                <img class="avatar" src="/img/Bitmap.jpg" alt="">
-            </div>
-            <p class="profile_name not_mobile">Alison Doe</p>
+            <img class="avatar not_mobile" src="/img/Bitmap.jpg" alt="">
+            <p class="profile_name not_mobile elem_with_dropdown">Alison Doe</p>
             <ul class="profile_info__list not_mobile">
                 <div class="drop_down_profile_menu">
                     <li>
@@ -579,7 +584,7 @@
                     <div class="title_part">
                         <p>Services provided</p>
                         <a href="">
-                            <img class="edit" src="/img/icons/edit.svg" alt="">
+                            <img class="edit" src="/img/icons/edit.svg" alt="#services_edit">
                         </a>
                     </div>
                     <div class="data_part bottom_padding_0">
@@ -598,7 +603,7 @@
                     <div class="title_part">
                         <p>People I need on my team</p>
                         <a href="">
-                            <img class="edit" src="/img/icons/edit.svg" alt="">
+                            <img class="edit" src="/img/icons/edit.svg" alt="#people-need_edit">
                         </a>
                     </div>
                     <div class="data_part bottom_padding_0">
@@ -732,7 +737,7 @@
     <audio id="audio" src="/audio/audio.mp3"></audio>
 
     <script src="/js/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <script src="/js/jquery.modal.min.js"></script>
     <script src="/slick/slick.min.js"></script>
     <script src="/js/main.js"></script>
 </body>

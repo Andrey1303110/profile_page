@@ -29,7 +29,6 @@ $(document).ready(function(){
     })
 
     $(document).on("click", "img.edit", function(event) {
-      //event.preventDefault();
       let modal = $(this).attr("alt");
       $(modal).modal({
         escapeClose: false,
