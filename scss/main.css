@@ -2325,7 +2325,7 @@ footer .blocks .sn_icons img {
 
 .modal input[type=submit] {
   line-height: 2.1875vw;
-  padding: 0;
+  padding: 0 1.18499vw;
   width: 5vw;
   margin-right: 1.146vw;
 }
@@ -3123,10 +3123,6 @@ input[type=reset] {
   margin-bottom: 1.875vw;
 }
 
-.modal.experience_edit form {
-  padding-top: 1.198vw;
-}
-
 .modal.experience_edit form input:not(input[type=submit]) {
   margin-bottom: 0.99vw;
   font-size: 1.042vw;
@@ -3189,6 +3185,7 @@ input[type=reset] {
 }
 
 .modal.experience_edit .accordion .accordion_content {
+  padding: 0.78999vw 0;
   padding-left: 0;
   padding-right: 0;
 }
@@ -3235,10 +3232,6 @@ input[type=reset] {
 
 .modal.talent_edit > .title {
   margin-bottom: 1.875vw;
-}
-
-.modal.talent_edit form {
-  padding-top: 1.198vw;
 }
 
 .modal.talent_edit form input:not(input[type=submit]) {
@@ -4214,5 +4207,39 @@ ul.professionals, ul.subprofessionals {
 
 .accordion_content {
   display: none;
+}
+
+.button_blc {
+  line-height: 2.1875vw;
+  width: 5.5vw;
+  margin-right: 1.146vw;
+  text-align: center;
+}
+
+.button_blc .button {
+  display: inline-block;
+  font-size: 0.9375vw;
+  font-weight: bold;
+  padding: 0 1.18499vw;
+  background-color: #1E92FE;
+  border: 1px solid #1E92FE;
+  border-radius: 0.26vw;
+  color: #ffffff;
+  white-space: nowrap;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.button_blc a.button.blk {
+  padding: 0 1.18499vw;
+  background: transparent;
+  font-weight: normal;
+  color: #6A6A75;
+  border: 0.06583vw #6A6A75 solid;
+}
+
+.button_blc a.button.blk:hover {
+  background-color: #00193F;
+  color: #ffffff;
 }
 /*# sourceMappingURL=main.css.map */

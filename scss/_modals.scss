@@ -291,7 +291,7 @@
 	}
 	input[type=submit] {
 		line-height: 2.1875vw;
-		padding: 0;
+		padding: 0 18/$width*100vw;
 		width: 5vw;
 		margin-right: 1.146vw;
 	}
@@ -943,7 +943,6 @@ input[type=reset] {
 		margin-bottom: 1.875vw;
 	}
 	form {
-		padding-top: 1.198vw;
 		input {
 			&:not(input[type=submit]) {
 				margin-bottom: 0.99vw;
@@ -1001,6 +1000,7 @@ input[type=reset] {
 			}
 		}
 		.accordion_content {
+			padding: 12/$width*100vw 0;
 			padding-left: 0;
 			padding-right: 0;
 		}
@@ -1037,7 +1037,6 @@ input[type=reset] {
 		margin-bottom: 1.875vw;
 	}
 	form {
-		padding-top: 1.198vw;
 		input {
 			&:not(input[type=submit]) {
 				margin-bottom: 0.99vw;
@@ -1846,4 +1845,34 @@ ul.professionals, ul.subprofessionals {
 
 .accordion_content {
 	display: none;
+}
+
+.button_blc {
+	line-height: 2.1875vw;
+	width: 5.5vw;
+	margin-right: 1.146vw;
+	text-align: center;
+	.button {
+		display: inline-block;
+		font-size: 0.9375vw;
+		font-weight: bold;
+		padding: 0 18/$width*100vw;
+		background-color: #1E92FE;
+		border: 1px solid #1E92FE;
+		border-radius: 0.26vw;
+		color: #ffffff;
+		white-space: nowrap;
+		transition: all 0.3s linear;
+	}
+	a.button.blk {
+		padding: 0 18/$width*100vw;
+		background: transparent;
+		font-weight: normal;
+		color: #6A6A75;
+		border: 1/$width*100vw #6A6A75 solid;
+		&:hover {
+			background-color: #00193F;
+			color: #ffffff;
+		}
+	}
 }
