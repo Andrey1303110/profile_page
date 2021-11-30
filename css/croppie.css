@@ -1,0 +1,249 @@
+.croppie-container {
+	width: 14.53125vw;
+	height: 14.323vw;
+}
+
+.croppie-container .cr-image {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: 0 0;
+    max-height: none;
+    max-width: none;
+}
+
+.croppie-container .cr-boundary {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.croppie-container .cr-viewport,
+.croppie-container .cr-resizer {
+    position: absolute;
+    border: 2px solid #fff;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.croppie-container .cr-resizer {
+  z-index: 2;
+  box-shadow: none;
+  pointer-events: none;
+}
+
+.croppie-container .cr-resizer-vertical,
+.croppie-container .cr-resizer-horisontal {
+  position: absolute;
+  pointer-events: all;
+}
+
+.croppie-container .cr-resizer-vertical::after,
+.croppie-container .cr-resizer-horisontal::after {
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    border: 1px solid black;
+    background: #fff;
+    width: 0.521vw;
+    height: 0.521vw;
+    content: '';
+}
+
+.croppie-container .cr-resizer-vertical {
+  bottom: -0.26vw;
+  cursor: row-resize;
+  width: 100%;
+  height: 0.521vw;
+}
+
+.croppie-container .cr-resizer-vertical::after {
+    left: 50%;
+    margin-left: -0.26vw;
+}
+
+.croppie-container .cr-resizer-horisontal {
+  right: -0.26vw;
+  cursor: col-resize;
+  width: 0.521vw;
+  height: 100%;
+}
+
+.croppie-container .cr-resizer-horisontal::after {
+    top: 50%;
+    margin-top: -0.26vw;
+}
+
+.croppie-container .cr-original-image {
+    display: none;
+}
+
+.croppie-container .cr-vp-circle {
+    border-radius: 50%;
+}
+
+.croppie-container .cr-overlay {
+    z-index: 1;
+    position: absolute;
+    cursor: move;
+    touch-action: none;
+}
+
+.croppie-container .cr-slider-wrap {
+    text-align: center;
+}
+
+.croppie-result {
+    position: relative;
+    overflow: hidden;
+}
+
+.croppie-result img {
+    position: absolute;
+}
+
+.croppie-container .cr-image,
+.croppie-container .cr-overlay,
+.croppie-container .cr-viewport {
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+/*************************************/
+/***** STYLING RANGE INPUT ***********/
+/*************************************/
+/*http://brennaobrien.com/blog/2014/05/style-input-type-range-in-every-browser.html */
+/*************************************/
+
+.cr-slider {
+    -webkit-appearance: none;
+/*removes default webkit styles*/
+	/*border: 1px solid white; *//*fix for FF unable to apply focus style bug */
+    width: 12.604vw;
+/*required for proper track sizing in FF*/
+    background-color: transparent;
+}
+
+.cr-slider::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 0.15625vw;
+    background: rgba(0, 0, 0, 0.5);
+    border: 0;
+    border-radius: 0.15625vw;
+}
+
+.cr-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 0.833vw;
+    width: 0.833vw;
+    border-radius: 50%;
+    background: #ddd;
+    margin-top: -0.3125vw;
+}
+
+.cr-slider:focus {
+    outline: none;
+}
+
+.cr-slider::-moz-range-track {
+    width: 100%;
+    height: 0.15625vw;
+    background: rgba(0, 0, 0, 0.5);
+    border: 0;
+    border-radius: 0.15625vw;
+}
+
+.cr-slider::-moz-range-thumb {
+    border: none;
+    height: 0.833vw;
+    width: 0.833vw;
+    border-radius: 50%;
+    background: #ddd;
+    margin-top: -0.3125vw;
+}
+
+/*hide the outline behind the border*/
+.cr-slider:-moz-focusring {
+    outline: 0.052vw solid white;
+    outline-offset: -0.052vw;
+}
+
+.cr-slider::-ms-track {
+    width: 100%;
+    height: 0.26vw;
+    background: transparent;
+/*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
+	border-color: transparent;/*leave room for the larger thumb to overflow with a transparent border */
+	border-width: 0.3125vw 0;
+	color: transparent;/*remove default tick marks*/
+}
+.cr-slider::-ms-fill-lower {
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: 0.521vw;
+}
+.cr-slider::-ms-fill-upper {
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: 0.521vw;
+}
+.cr-slider::-ms-thumb {
+	border: none;
+	height: 0.833vw;
+	width: 0.833vw;
+	border-radius: 50%;
+	background: #ddd;
+	margin-top: 0.052vw;
+}
+.cr-slider:focus::-ms-fill-lower {
+	background: rgba(0, 0, 0, 0.5);
+}
+.cr-slider:focus::-ms-fill-upper {
+	background: rgba(0, 0, 0, 0.5);
+}
+/*******************************************/
+
+/***********************************/
+/* Rotation Tools */
+/***********************************/
+.cr-rotate-controls {
+	position: absolute;
+	bottom: 0.26vw;
+	left: 0.26vw;
+	z-index: 1;
+}
+.cr-rotate-controls button {
+	border: 0;
+	background: none;
+}
+.cr-rotate-controls i:before {
+	display: inline-block;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 1.146vw;
+}
+.cr-rotate-l i:before {
+	content: '↺';
+}
+.cr-rotate-r i:before {
+	content: '↻';
+}
+@media (max-width: 425px) {
+	.croppie-container {
+		width: 34.4vw;
+		height: 34.4vw;
+		margin-right: 6.67vw;
+	}
+	.cr-slider{
+		width: 113px;
+	}
+}
