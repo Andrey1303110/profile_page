@@ -1019,6 +1019,11 @@ section {
                 color: white;
                 font-size: 13/$width*100vw;
                 border: 1/$width*100vw solid white;
+                transition: .4s ease-in-out;
+                &:hover {
+                    background: white;
+                    color: black;
+                }
             }
         }
         .data_part {

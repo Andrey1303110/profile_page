@@ -50,6 +50,7 @@ $(document).ready(function(){
       return false;
     });
 
+
     $('.elem_with_dropdown').on("click", function() {
       if ($(this).find('.drop-down').length) {
         $(this).find('.drop-down').slideToggle();
@@ -67,6 +68,49 @@ $(document).ready(function(){
     $('.button_add').on("click", function() {
       $(this).parent().find('.drop-down.main').slideToggle();
     })
+
+    $('.accordion .title').on("click", function() {
+      $(this).parent().find('.accordion_content').slideToggle();
+      $(this).parent().find('.subtitle').slideToggle();
+    })
+
+
+
+    $("form .select p").on("click", function () {
+      $(this).next("ul.professionals").slideToggle();
+      $(".owl-stage-outer").addClass("open");
+    });
+  
+    $("ul.professionals>li").on("click", function () {
+      $(this).find("ul.sub_professionals").slideToggle();
+      $(this).toggleClass("open");
+    });
+  
+    $(".sub_professionals li").on("click", function () {
+      let selected = $(this).text();
+      $(this).parents(".select").find(".selected_item").text(selected);
+      $("ul.professionals").slideUp();
+    });
+  
+    $(".select.one .sub_professionals li label input").on("click", function () {
+      $(this).parents(".sub_professionals, .professionals").slideUp();
+      let select_val_one = $(this).parent().text();
+      $(".select.one .selected_item").text(select_val_one);
+    });
+    $(".select.multi .sub_professionals li label input").on("click", function () {
+      $(this).parents(".sub_professionals, .professionals").slideUp();
+      let select_val = $(this).attr("value");
+      let select_item = $(this).parent().text();
+      $(this)
+        .parents(".select.multi")
+        .next(".multi_selected_items")
+        .append("<p class='selected' data-value=" + select_val + ">" + select_item + "<span></span></p>");
+    });
+    $(".multi_selected_items").on("click", ".selected span", function () {
+      let select_val = $(this).parent(".selected").attr("data-value");
+      $('.select.multi .sub_professionals input[value="' + select_val + '"]').prop("checked", false);
+      $(this).parent().remove();
+    });
 });
 
 
