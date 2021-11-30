@@ -533,11 +533,11 @@ section {
                     margin-bottom: 1vw;
                     font-size: 14/$width*100vw;
                 }
-                &:nth-child(3) {
-                    font-weight: 800;
-                    color: #1E92FE;
-                    font-size: 18/$width*100vw;
-                }
+            }
+            a {
+                font-weight: 800;
+                color: #1E92FE;
+                font-size: 18/$width*100vw;
             }
         }
     }
