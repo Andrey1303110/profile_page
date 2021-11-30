@@ -165,12 +165,12 @@
 @media screen and (max-width: 425px) {
   .slick-dots li {
     height: 1.5vw;
-    border-radius: 1vw;
-    width: 7vw;
-    margin: 0 .75vw;
+    border-radius: 1.5vw;
+    width: 5vw;
+    margin: 0 2vw;
   }
   .slick-dots li.slick-active {
-    width: 15vw;
+    width: 14vw;
   }
 }
 /*# sourceMappingURL=slick-theme.css.map */

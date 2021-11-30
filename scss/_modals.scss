@@ -1,9 +1,6 @@
 @media screen and (min-width:425px) {
 	$width: 1519;
 }
-@media screen and (max-width:425px) {
-	$width: 425;
-}
 
 .modal {
 	input, select, textarea {
@@ -29,7 +26,7 @@
 	.button_blc {
 		display: flex;
 		align-items: center;
-		margin-top: 29px;
+		margin-top: 29/$width*100vw;
 	}
 	a.button[rel="modal:close"] {
 		line-height: 2.1875vw;
@@ -906,7 +903,6 @@
 	}
 	.button {
 		line-height: 2.1875vw;
-		padding: 0;
 		width: 5vw;
 		margin-right: 1.146vw;
 		margin-top: 0.78125vw;
@@ -1802,6 +1798,10 @@ ul.professionals, ul.subprofessionals {
 	color: black;
 }
 
+.custom-checkbox {
+	visibility: collapse;
+}
+
 .custom-checkbox + label::before {
 	position: relative;
 	top: .25vw;
@@ -1875,4 +1875,215 @@ ul.professionals, ul.subprofessionals {
 			color: #ffffff;
 		}
 	}
+}
+
+@media screen and (max-width:425px) {
+	$width: 425;
+	.modal label {
+		font-size: 4.27vw;
+		line-height: 5.33vw;
+		font-weight: bold;
+		padding-left: 0.521vw;
+	}
+	.button_blc {
+		width: auto;
+		margin-top: 40/$width*100vw;
+		margin-bottom: 20/$width*100vw;
+	}
+	.modal input[type="text"], .modal input[type="tel"], .modal input[type="email"], .modal input[type="url"], .modal input[type="date"], .modal textarea, .modal select, .modal .select.multi > p {
+		font-size: 4vw;
+		padding: 1.07vw 1.87vw 1.33vw;
+		border-radius: 1.5vw;
+		margin-top: 0.53vw;
+		margin-bottom: 3.47vw;
+		line-height: 5.33vw;
+	}
+	.modal input[type="submit"], .modal input[type="reset"], .modal input[type="button"], .modal a.button[rel="modal:close"] {
+		width: 80/$width*100vw;
+		margin-top: 1.07vw;
+		margin-right: 5.87vw;
+		font-size: 4.27vw;
+		line-height: 5.33vw;
+		padding-top: 1.87vw;
+		padding-bottom: 1.33vw;
+		border-radius: 1.5vw;
+	}
+	.modal a.button[rel="modal:close"] {
+		width: fit-content;
+	}
+	.modal.popup_blc {
+		width: 87vw;
+		border-radius: 1.33vw;
+		padding: 2.13vw 4.27vw 4.53vw;
+	}
+	.modal .title {
+		font-size: 4.8vw;
+		line-height: 9.07vw;
+		margin-bottom: 1.6vw;
+		font-weight: 900;
+		color: #000000;
+	}
+	.modal.edit_profile form .profile_photo {
+		margin-top: -6.125vw;
+		margin-bottom: 22/$width*100vw;
+		border: 3.5/$width*100vw solid #ffffff;
+		width: 47/$width*100vw;
+		height: 50/$width*100vw;
+	}
+	.modal.edit_profile form .add_pic__pic_blc {
+		height: 75/$width*100vw;
+		border-radius: 1.33vw;
+		p {
+			font-size: 16/$width*100vw;
+			line-height: 30/$width*100vw;
+		}
+	}
+	.modal .select.multi li {
+		font-size: 4vw;
+		line-height: 5.5vw;
+	}
+	.popup_blc .accordion p.title {
+		&::after {
+			width: 39/$width*100vw;
+			height: 28/$width*100vw;
+			top: 7/$width*100vw;
+		}
+	}
+	.modal .multi_selected_items .selected {
+		font-size: 4vw;
+		line-height: 6vw;
+		margin-right: 2vw;
+		margin-bottom: 3vw;
+		border-radius: 1.33vw;
+		padding: 1vw 2.5vw;
+	}
+	.modal .multi_selected_items .selected span {
+		width: 15/$width*100vw;
+		height: 11/$width*100vw;
+		margin-left: 10/$width*100vw;
+		&::after {
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.modal .multi_selected_items .selected:hover span::after {
+		width: 100%;
+		height: 100%;
+	}
+	.modal.lead_finder .learn_more {
+		font-size: 4vw;
+		line-height: 6vw;
+	}
+	.modal.popup_blc > .subtitle {
+		font-size: 4.27vw;
+		line-height: 9.07vw;
+		margin-bottom: 1.6vw;
+		font-weight: bold;
+		padding-left: 0.521vw;
+	}
+	.modal.experience_edit .accordion .title, .modal.talent_edit .accordion .title {
+		font-size: 1.25vw;
+		font-weight: bold;
+		line-height: 1.71875vw;
+		margin-bottom: 0;
+	}
+	.modal.popup_blc.experience_edit .accordion .title, .modal.popup_blc.talent_edit .accordion .title {
+		font-size: 4.8vw;
+		line-height: 6.67vw;
+		padding: 1.87vw 0;
+	}
+	.modal.popup_blc.experience_edit .accordion .title span, .modal.popup_blc.talent_edit .accordion .title span {
+		font-size: 4.27vw;
+		line-height: 5.87vw;
+	}
+	.modal.popup_blc.experience_edit form input:not(input[type="submit"], input[type="reset"], input[type="button"]), .modal.popup_blc.experience_edit form select, .modal.popup_blc.talent_edit form input:not(input[type="submit"], input[type="reset"], input[type="button"]), .modal.popup_blc.talent_edit form select {
+		font-size: 4vw;
+		line-height: 9.07vw;
+		padding: 1.6vw 3.73vw;
+		margin-bottom: 4vw;
+		margin-left: 0;
+	}
+	.modal.popup_blc.experience_edit form label, .modal.popup_blc.talent_edit form label {
+		line-height: 9.07vw;
+	}
+	.modal.popup_blc.experience_edit .accordion .date_blc, .modal.popup_blc.talent_edit .accordion .date_blc {
+		flex-direction: column;
+	}
+	.modal.experience_edit .accordion .date_blc, .modal.talent_edit .accordion .date_blc {
+		display: flex;
+		justify-content: space-between;
+	}
+	.modal.experience_edit .accordion .date_blc select {
+		width: 100%;
+		margin-left: 0;
+		&::placeholder {
+			font-size: 4vw;
+			line-height: 9.07vw;
+		}
+	}
+	.modal.popup_blc.experience_edit .accordion .checkbox, .modal.popup_blc.talent_edit .accordion .checkbox {
+		margin-bottom: 2.93vw;
+	}
+	.modal.popup_blc.experience_edit .accordion .checkbox label, .modal.popup_blc.talent_edit .accordion .checkbox label {
+		font-size: 4.27vw;
+		line-height: 5.87vw;
+	}
+	.custom-checkbox:checked + label::before {
+		border-color: #1E92FE;
+		background-color: #1E92FE;
+	}
+	.modal.experience_edit .accordion .checkbox label::before, .modal.talent_edit .accordion .checkbox label::before {
+		border: 0.104vw solid #1E92FE;
+	}
+	.custom-checkbox + label::before {
+		width: 4.53vw;
+		height: 4.53vw;
+		margin-right: 4.53vw;
+		transform: translateY(2.5/$width*100vw);
+	}
+	.modal.experience_edit form a[rel="modal:close"] {
+		width: fit-content;
+	}
+	.button_blc a.button.blk {
+		padding-left: 10/$width*100vw;
+		padding-right: 10/$width*100vw;
+	}
+	.modal.talent_edit label.type div {
+		flex-direction: column;
+	}
+	.modal.talent_edit label.type div input, .modal.talent_edit label.type div select {
+		width: 100%;
+	}
+	.modal.popup_blc .drop_zone {
+		p, a {
+			font-size: 3vw;
+			line-height: 4vw;
+		}
+	}
+	.modal.talent_edit .upload__file_confirm p{
+		&:nth-child(1) {
+			width: 7.813vw;
+			height: 7.813vw;
+			font-size: 2.938vw;
+		}
+		&:nth-child(2) {
+			font-size: initial;
+		}
+	}
+	.modal.talent_edit .upload__file_confirm span {
+		width: 4vw;
+		height: 4vw;
+		&::before {
+			width: 2.5vw;
+			height: 2.5vw;
+		}
+	}
+	.modal.talent_edit form a[rel="modal:close"] {
+		width: fit-content;
+	}
+	.modal.photo_edit .picture_block .pic_blc {
+		width: 150/$width*100vw;
+		height: 150/$width*100vw;
+	}
+	
 }
