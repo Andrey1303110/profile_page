@@ -294,7 +294,7 @@
                     <div class="data_part">
                         <div class="experience_content">
                             <div class="company_logo">
-                                <img src="/img/company_logo/company_154178.webp" alt="">
+                                <img src="/img/company_logo/BMG.webp" alt="">
                             </div>
                             <div class="company_name">
                                 <a href="">J+ Music Company</a>
@@ -310,7 +310,7 @@
 
                         <div class="experience_content">
                             <div class="company_logo">
-                                <img src="/img/company_logo/company_154178.webp" alt="">
+                                <img src="/img/company_logo/BMG.webp" alt="">
                             </div>
                             <div class="company_name">
                                 <a href="">J+ Music Company</a>
@@ -337,8 +337,8 @@
                         <div class="interact_content">
                             <div class="container">
                                 <div class="head">
-                                    <p>My First song</p>
-                                    <img class="not_mobile" src="/img/company_logo/company_154178.webp" alt="">
+                                    <p>My First Song</p>
+                                    <img class="not_mobile" src="/img/company_logo/BMG.webp" alt="">
                                 </div>
                                 <div class="middle">
                                     <img class="play_audio" src="/img/icons/triangle.svg" alt="audio">
@@ -349,8 +349,8 @@
                         <div class="interact_content">
                             <div class="container">
                                 <div class="head">
-                                    <p>My First song</p>
-                                    <img class="not_mobile" src="/img/company_logo/company_154149.webp" alt="">
+                                    <p>My Second Song</p>
+                                    <img class="not_mobile" src="/img/company_logo/Spotify.webp" alt="">
                                 </div>
                                 <div class="middle">
                                     <img class="play_audio" src="/img/icons/triangle.svg" alt="audio">
@@ -361,20 +361,8 @@
                         <div class="interact_content">
                             <div class="container">
                                 <div class="head">
-                                    <p>My First song</p>
-                                    <img class="not_mobile" src="/img/company_logo/company_154149.webp" alt="">
-                                </div>
-                                <div class="middle">
-                                    <img class="play_audio" src="/img/icons/triangle.svg" alt="audio">
-                                </div>
-                                <p class="time_duration not_mobile">05:23</p>
-                            </div>
-                        </div>
-                        <div class="interact_content">
-                            <div class="container">
-                                <div class="head">
-                                    <p>My First song</p>
-                                    <img class="not_mobile" src="/img/company_logo/company_154149.webp" alt="">
+                                    <p>My Third Song</p>
+                                    <img class="not_mobile" src="/img/company_logo/Spotify.webp" alt="">
                                 </div>
                                 <div class="middle">
                                     <img class="play_audio" src="/img/icons/triangle.svg" alt="audio">
@@ -2865,18 +2853,12 @@
                 </option>
             </select>
             </div>
-        </label><label>Song Title<input placeholder="My First Song" type="text" /></label><label>Artist Name<input placeholder="Artist name here" type="text" /></label><label>Publisher<select class="publisher_select" name="talent_publisher">
+        </label><label>Song Title<input class="song_title" placeholder="" type="text" value="My First Song"/></label><label>Artist Name<input placeholder="Artist name here" type="text" /></label><label>Publisher<select class="publisher_select" name="talent_publisher">
             <option value="spotify">
                 Spotify
             </option>
-            <option value="soundcloud">
-                Soundcloud
-            </option>
-            <option value="youtube">
-                Youtube
-            </option>
-            <option value="itune">
-                Itune
+            <option value="bmg" selected>
+                BMG
             </option>
             <option value="other">
                 Other
@@ -2927,18 +2909,12 @@
                 </option>
             </select>
             </div>
-        </label><label>Song Title<input placeholder="My First Song" type="text" /></label><label>Artist Name<input placeholder="Artist name here" type="text" /></label><label>Publisher<select class="publisher_select" name="talent_publisher">
-            <option value="spotify">
+        </label><label>Song Title<input class="song_title" placeholder="" type="text" value="My Second Song"/></label><label>Artist Name<input placeholder="Artist name here" type="text" /></label><label>Publisher<select class="publisher_select" name="talent_publisher">
+            <option value="spotify" selected>
                 Spotify
             </option>
-            <option value="soundcloud">
-                Soundcloud
-            </option>
-            <option value="youtube">
-                Youtube
-            </option>
-            <option value="itune">
-                Itune
+            <option value="bmg">
+                BMG
             </option>
             <option value="other">
                 Other
@@ -2971,6 +2947,62 @@
         </div>
         </form>
     </div>
+    </div>
+    <div class="accordion">
+        <p class="title">
+            My Third Song<span class="subtitle">Expand to edit the details</span>
+        </p>
+        <div class="accordion_content">
+            <form>
+            <label class="type">Type
+                <div>
+                <input placeholder="Music" readonly="" type="text" /><select class="from_month" name="from_month">
+                    <option value="">
+                    Single
+                    </option>
+                    <option value="">
+                    Album
+                    </option>
+                </select>
+                </div>
+            </label><label>Song Title<input class="song_title" placeholder="" type="text" value="My Third Song"/></label><label>Artist Name<input placeholder="Artist name here" type="text" /></label><label>Publisher<select class="publisher_select" name="talent_publisher">
+                <option value="spotify" selected>
+                    Spotify
+                </option>
+                <option value="bmg">
+                    BMG
+                </option>
+                <option value="other">
+                    Other
+                </option>
+                </select></label><label>Publisher
+                <div class="drop_zone">
+                <p>
+                    Drag & Drop your file here
+                </p>
+                <p class="or">
+                    OR
+                </p>
+                <input accept="image/*" hidden="" type="file" /><a class="button upload" href="/" rel="nofollow">Browse Files</a>
+                </div>
+            </label>
+            <div class="added_talents">
+                <div class="upload__file_confirm">
+                <p>
+                    .MP3
+                </p>
+                <p>
+                    Contacts File
+                </p>
+                <span></span>
+                </div>
+            </div>
+            <label>Song URL<input placeholder="URL here" type="url" /></label><label>Release Date<input type="date" value="mm.dd.yyyy" /></label>
+            <div class="button_blc">
+                <input class="button" type="submit" value="Save" /><a class="button blk" href="#" rel="modal:close">Discard changes</a>
+            </div>
+            </form>
+        </div>
     </div>
 </div>
 <div class="modal popup_blc photo_edit" id="photo_edit">

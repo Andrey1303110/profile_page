@@ -24,8 +24,29 @@ $(document).ready(function(){
 
     $('.play_audio').on('click', function() {
         let track_name = this.alt;
+        let timer = setInterval(() => { 
+          if ( ($(track_name)[0].currentTime % 60 != 0) || ($(track_name)[0].currentTime/60 < 1) ) {
+            if ($(track_name)[0].currentTime <= 9) {
+              $(this).parent().parent().find('.time_duration')[0].textContent = '0:0' + Math.round($(track_name)[0].currentTime)
+            }
+            else {
+              $(this).parent().parent().find('.time_duration')[0].textContent = '0:' + Math.round($(track_name)[0].currentTime)
+            }
+          }
+          if ( ($(track_name)[0].currentTime % 60 == 0) || ($(track_name)[0].currentTime/60 >= 1) ) {
+            if ($(track_name)[0].currentTime <= 9) {
+              $(this).parent().parent().find('.time_duration')[0].textContent = Math.round($(track_name)[0].currentTime/60) + ':0' + Math.round($(track_name)[0].currentTime)
+            }
+            else {
+              $(this).parent().parent().find('.time_duration')[0].textContent = Math.round($(track_name)[0].currentTime/60) + ':' + (Math.round($(track_name)[0].currentTime)-60)
+            }
+          }
+        }, 1000);
+          
+        setTimeout(() => { clearInterval(timer); }, $(track_name)[0].duration * 1000);
         $(track_name)[0].play();
         $(this).addClass('playing');
+
     })
 
     $(document).on("click", "img.edit", function(event) {
@@ -138,4 +159,16 @@ $(document).ready(function(){
         }
       }
     }*/
+    function set_song_titiles() {
+      let song_title_edit = $('#talent_edit .accordion .song_title');
+      let song_title = $('.talent_block .interact_content .head p');
+      for (let i = 0; i < song_title.length; i++) {
+        song_title[i].textContent = song_title_edit[i].value;
+      }
+    }
+
+    $('#talent_edit .accordion .song_title').on('input', set_song_titiles());
+
+
+
 });

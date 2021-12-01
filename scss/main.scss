@@ -973,6 +973,11 @@ section {
                         align-items: center;
                         border: solid 1/$width*100vw #1E92FE;
                         border-radius: .25vw;
+                        cursor: pointer;
+                        transition: .4s ease-in-out;
+                        &:active{
+                            background: #1E92FE;
+                        }
                         img {
                             width: 11/$width*100vw;
                             transform: rotate(-45deg);

@@ -1317,6 +1317,13 @@ section .right_section .people_viewed_block .item .right .add {
           align-items: center;
   border: solid 0.06583vw #1E92FE;
   border-radius: .25vw;
+  cursor: pointer;
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+section .right_section .people_viewed_block .item .right .add:active {
+  background: #1E92FE;
 }
 
 section .right_section .people_viewed_block .item .right .add img {
@@ -2046,6 +2053,7 @@ footer .blocks .sn_icons img {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 1.90915vw;
+  margin-bottom: 1.5vw;
 }
 
 .modal a.button[rel="modal:close"] {
