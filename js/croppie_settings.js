@@ -1,8 +1,8 @@
-$(document).ready(function() {
+$(document).ready(function () {
     $(document).on("click", ".drop_zone .button.upload", function (e) {
-		e.preventDefault();
-		$(this).prev().trigger("click");
-	});
+        e.preventDefault();
+        $(this).prev().trigger("click");
+    });
 
     var $uploadCrop;
 
@@ -18,32 +18,37 @@ $(document).ready(function() {
             reader.readAsDataURL(input.files[0]);
         }
     }
-  
+
     let crop_pic = $(".crop_pic");
     if (crop_pic.length > 0) {
         $uploadCrop = crop_pic.croppie({
             url: "/img/icons/profile_avatar.png",
             enableExif: true,
             viewport: {
-                type: "circle",
-            },
+				type: "circle",
+			},
         });
     }
-  
+
     $(document).on("change", "#upload", function () {
         readFile(this);
     });
-  
+
     $(document).on("update.croppie", ".crop_pic", function (ev, cropData) {
         $uploadCrop.croppie("result", {
             type: "canvas",
             size: "viewport",
         }).then(function (resp) {
             $(".crop_pic_result img").attr("src", resp);
-            $('.cr-slider').attr({'min':.85, 'max':1.5});
+            if (window.innerWidth <= 425) {
+                $('.cr-slider').attr({ 'min': .5, 'max': .8 });
+            }
+            else {
+                $('.cr-slider').attr({ 'min': .85, 'max': 1.5 });
+            }
         });
     });
-  
+
     $(document).on("click", "input.button.blk.delete", function () {
         $uploadCrop.croppie("bind", {
             url: "/img/icons/profile_avatar.png",
