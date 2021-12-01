@@ -108,9 +108,9 @@ header {
             }
         }
         input {
-            width: 135/$width*100vw;
+            width: 100/$width*100vw;
             font-size: 0.73vw;
-            padding: 0.725vw 0.725vw 0.68vw 0.94vw;
+            padding: 0.725vw 2.25vw 0.68vw 0.94vw;
             border: 0.05vw solid #202631;
             border-radius: 1.3vw;
         }
@@ -1187,8 +1187,9 @@ footer {
         div.search {
             input {
                 height: 100%;
-                width: 138/$width*100vw;
+                width: 115/$width*100vw;
                 padding: 0 2.5vw;
+                padding-right: 35/$width*100vw;
                 font-size: 14/$width*100vw;
                 border-radius: 5vw;
             }

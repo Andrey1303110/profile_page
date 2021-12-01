@@ -130,4 +130,12 @@ $(document).ready(function(){
       $('.about_block .data_part p')[0].textContent = '';
       $('.about_block .data_part p')[0].textContent = $('#about_edit textarea')[0].value; 
     })
+
+    /*for (let i = 0; i < $('.experience_block .experience_content').length; i++) {
+      for (let j = 1; j < $('.experience_block .experience_content')[i].childElementCount; j++) {
+        for (let z = 0; z < $('.experience_block .experience_content')[i].children[j].childElementCount; z++) {
+          console.log($('.experience_block .experience_content')[i].children[j].children[z].textContent);
+        }
+      }
+    }*/
 });

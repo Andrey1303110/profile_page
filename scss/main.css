@@ -135,9 +135,9 @@ header .header_left .logo img {
 }
 
 header .header_left input {
-  width: 8.88743vw;
+  width: 6.58328vw;
   font-size: 0.73vw;
-  padding: 0.725vw 0.725vw 0.68vw 0.94vw;
+  padding: 0.725vw 2.25vw 0.68vw 0.94vw;
   border: 0.05vw solid #202631;
   border-radius: 1.3vw;
 }
@@ -1600,8 +1600,9 @@ footer .blocks .sn_icons img {
   }
   header div.search input {
     height: 100%;
-    width: 32.47059vw;
+    width: 27.05882vw;
     padding: 0 2.5vw;
+    padding-right: 8.23529vw;
     font-size: 3.29412vw;
     border-radius: 5vw;
   }
