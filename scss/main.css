@@ -59,7 +59,7 @@ body {
 .elem_with_dropdown::after {
   content: "";
   position: absolute;
-  background-image: url(/img/icons/arrow-down.png);
+  background-image: url(img/icons/arrow-down.png);
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
@@ -440,7 +440,7 @@ section .top {
 }
 
 section .top .bg_top {
-  background: url(/img/jobdes.png);
+  background: url(img/jobdes.png);
   background-size: cover;
   width: 100%;
   height: 24.02897vw;
@@ -572,7 +572,7 @@ section .left_section .top_buttons .drop-down .title::after {
   position: absolute;
   top: 0.72416vw;
   right: 0.65833vw;
-  background-image: url(/img/icons/arrow-down.png);
+  background-image: url(img/icons/arrow-down.png);
   background-size: contain;
   background-repeat: no-repeat;
   width: 1.18499vw;
@@ -595,7 +595,7 @@ section .left_section .top_buttons .drop-down .section p::after {
   position: absolute;
   top: -0.65833vw;
   right: 15%;
-  background-image: url(/img/icons/add.svg);
+  background-image: url(img/icons/add.svg);
   background-size: contain;
   background-repeat: no-repeat;
   -webkit-transform: rotate(45deg) translateX(1.64582vw);
@@ -4251,7 +4251,7 @@ ul.professionals, ul.subprofessionals {
 .popup_blc .accordion p.title::after {
   content: "";
   position: absolute;
-  background-image: url(/img/icons/arrow-down.png);
+  background-image: url(img/icons/arrow-down.png);
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
