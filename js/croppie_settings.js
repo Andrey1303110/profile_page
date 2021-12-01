@@ -22,7 +22,7 @@ $(document).ready(function () {
     let crop_pic = $(".crop_pic");
     if (crop_pic.length > 0) {
         $uploadCrop = crop_pic.croppie({
-            url: "/img/icons/profile_avatar.png",
+            url: "../img/icons/profile_avatar.png",
             enableExif: true,
             viewport: {
 				type: "circle",
@@ -51,7 +51,7 @@ $(document).ready(function () {
 
     $(document).on("click", "input.button.blk.delete", function () {
         $uploadCrop.croppie("bind", {
-            url: "/img/icons/profile_avatar.png",
+            url: "../img/icons/profile_avatar.png",
         });
         $("input#upload").val("");
     });
