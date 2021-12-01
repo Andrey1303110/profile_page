@@ -159,7 +159,7 @@ $(document).ready(function(){
         }
       }
     }*/
-    function set_song_titiles() {
+    function set_song_titles() {
       let song_title_edit = $('#talent_edit .accordion .song_title');
       let song_title = $('.talent_block .interact_content .head p');
       for (let i = 0; i < song_title.length; i++) {
@@ -167,7 +167,17 @@ $(document).ready(function(){
       }
     }
 
-    $('#talent_edit .accordion .song_title').on('input', set_song_titiles());
+    $('#talent_edit .accordion .song_title').on('input', set_song_titles());
+
+    function set_experince_titles() {
+      for (let i = 0; i < $('.company_name a').length; i++) {
+        $('.company_name a')[i].textContent = $('.title_experince input')[i].value
+        $('.company_name p')[i].textContent = $('.company_experince input')[i].value;
+      }
+    }
+
+    $('.title_experince input').on('change', set_experince_titles);
+    $('.company_experince input').on('change', set_experince_titles);
 
 
 
