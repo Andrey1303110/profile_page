@@ -5,12 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/js/jquery.modal.min.js"></script>
+    <script src="/js/croppie_settings.js"></script>
+    <script src="/js/croppie.min.js"></script>
     <link rel="stylesheet" href="/scss/main.css">
     <link href="/css/jquery.modal.min.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css"/>
     <link rel="stylesheet" href="/css/croppie.css">
-    <link rel="shortcut icon" href="/img/icons/iocn.webp" type="image/x-icon">
+    <link rel="shortcut icon" href="/img/icons/icon.webp" type="image/x-icon">
     <title>Profile</title>
 </head>
 
@@ -276,9 +280,7 @@
                         </a>
                     </div>
                     <div class="data_part">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem debitis harum rem amet sequi
-                            modi itaque fuga asperiores quae atque! Officia sit suscipit enim accusantium doloremque
-                            molestiae animi natus facilis.</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem debitis harum rem amet sequi modi itaque fuga asperiores quae atque! Officia sit suscipit enim accusantium doloremque molestiae animi natus facilis.</p>
                     </div>
                 </div>
 
@@ -636,7 +638,7 @@
                             <p>General Manager</p>
                         </div>
                         <div class="inline">
-                            <p>Content Manager</p>
+                            <p>Audio Mastering Engineer</p>
                         </div>
                     </div>
                 </div>
@@ -758,24 +760,18 @@
 
     <audio id="audio" src="/audio/audio.mp3"></audio>
 
-    <script src="/js/jquery-3.6.0.min.js"></script>
-    <script src="/js/jquery.modal.min.js"></script>
     <script src="/slick/slick.min.js"></script>
     <script src="/js/main.js"></script>
 </body>
 <div class="modal popup_blc edit_profile" id="edit_profile">
-    <p class="title">
-    Edit Profile
-    </p>
+    <p class="title">Edit Profile</p>
     <form>
     <div class="add_pic__pic_blc">
         <div style="height: 0px;width: 0px; overflow:hidden;">
-        <input accept="image/*" id="imgInp" type="file" />
+            <input accept="image/*" id="imgInp" type="file" />
         </div>
         <picture><img alt="" id="blah" src="#" /></picture>
-        <p class="change_pic">
-        Change Background Picture
-        </p>
+        <p class="change_pic">Change Background Picture</p>
     </div>
     <a class="profile_photo modal_open" href="#change_picture"><img alt="" src="/img/Bitmap.jpg" /></a><label>First Name*<input placeholder="First Name Here" required="" type="text" /></label><label>Last Name*<input placeholder="Last Name Here" required="" type="text" /></label>
     <div class="button_blc">
@@ -785,32 +781,28 @@
     </form>
 </div>
 <div class="modal popup_blc change_picture" id="change_picture">
-    <p class="title">
-    Change Profile Picture
-    </p>
+    <p class="title">Change Profile Picture</p>
     <form>
-    <p class="select_pic">
-        Select Profile Image
-    </p>
-    <div class="upload__file">
-        <div class="drop_zone">
-        <p>
-            Drag & Drop your file here
-        </p>
-        <p class="or">
-            OR
-        </p>
-        <input accept="image/*" hidden="" id="upload" type="file" />
-        <a class="button upload" href="/" rel="nofollow">Browse Files</a>
+        <p class="select_pic">Select Profile Image</p>
+        <div class="upload__file">
+            <div class="drop_zone">
+                <p>Drag & Drop your file here</p>
+                <p class="or">OR</p>
+                <input accept="image/*" hidden="" id="upload" type="file" />
+                <a class="button upload" href="/" rel="nofollow">Browse Files</a>
+            </div>
         </div>
-    </div>
-    <div class="crop_pic"></div>
-    <div class="crop_pic_result">
-        <img alt="" src="/img/icons/profile_avatar.png" />
-    </div>
-    <div class="button_blc">
-        <input class="button" type="submit" value="Save" /><a class="button blk" href="#" rel="modal:close">Cancel</a><input class="button blk delete" type="button" value="Delete Photo" />
-    </div>
+        <div class="crop_pic">
+
+        </div>
+        <div class="crop_pic_result">
+            <img alt="" src="/img/icons/profile_avatar.png" />
+        </div>
+        <div class="button_blc">
+            <input class="button" type="submit" value="Save" />
+            <a class="button blk" href="#" rel="modal:close">Cancel</a>
+            <input class="button blk delete" type="button" value="Delete Photo" />
+        </div>
     </form>
 </div>
 <div class="modal popup_blc team_builder" id="team_builder">
@@ -1113,7 +1105,11 @@
         </li>
         </ul>
     </div>
-    <div class="multi_selected_items"></div>
+    <div class="multi_selected_items">
+        <p class="selected" data-value="33">Regional Sales Manager<span></span></p>
+        <p class="selected" data-value="20">Recording Artist<span></span></p>
+        <p class="selected" data-value="18">Sound Designer<span></span></p>
+    </div>
     <label>Location<input class="location" type="text" /></label><label>Who do you need on your Team?*</label>
     <div class="select multi">
         <p>
@@ -1409,7 +1405,11 @@
         </li>
         </ul>
     </div>
-    <div class="multi_selected_items"></div>
+    <div class="multi_selected_items">
+        <p class="selected" data-value="22">Assistant Engineer<span></span></p>
+        <p class="selected" data-value="27">General Manager<span></span></p>
+        <p class="selected" data-value="26">Audio Mastering Engineer<span></span></p>
+    </div>
     <div class="button_blc">
         <input class="button" type="submit" value="Save" /><a class="button blk" href="#" rel="modal:close">Cancel</a>
     </div>
@@ -3044,7 +3044,11 @@
     <form>
     <label>Skills<input placeholder="Skill (Ex. Classical)" type="text" /></label>
     <div class="multi_selected_items">
-        <a class="selected">Promotion Manager<span></span></a>
+        <a class="selected">Assistant Engineer<span></span></a>
+        <a class="selected">Artists Relations and Development<span></span></a>
+        <a class="selected">General Manager<span></span></a>
+        <a class="selected">Content Management<span></span></a>
+        <a class="selected">Producer, Singer and Songwriter<span></span></a>
     </div>
     <div class="button_blc">
         <input class="button" type="submit" value="Save" /><a class="button blk" href="#" rel="modal:close">Cancel</a>

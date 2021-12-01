@@ -506,6 +506,10 @@ section .left_section .top_buttons {
   margin-bottom: 1vw;
 }
 
+section .left_section .top_buttons div {
+  cursor: pointer;
+}
+
 section .left_section .top_buttons .button_add {
   width: 20.079vw;
   height: 100%;
@@ -1115,9 +1119,9 @@ section .promotional_block .photos {
 }
 
 section .promotional_block .photos .slick-slide div {
-  margin-bottom: 1.97498vw;
-  margin-right: 1.97498vw;
-  margin-left: 1.97498vw;
+  margin-bottom: 0.72416vw;
+  margin-right: 0.72416vw;
+  margin-left: 0.72416vw;
 }
 
 section .promotional_block .photos .slick-slide div:nth-child(3n) {
@@ -2398,9 +2402,9 @@ footer .blocks .sn_icons img {
   color: #ffffff;
   background-color: #1E92FE;
   padding: 0.573vw 0.885vw 0.521vw 0.729vw;
-  margin-top: -1.198vw;
+  margin-top: 0;
   margin-right: 1.146vw;
-  margin-bottom: 1.875vw;
+  margin-bottom: .75vw;
   border-radius: 0.365vw;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
@@ -2533,7 +2537,7 @@ footer .blocks .sn_icons img {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  min-height: 7.708vw;
+  min-height: 7vw;
   background: #E8F2FF;
   border-radius: 0.365vw;
   margin-bottom: 0.573vw;
@@ -2550,6 +2554,14 @@ footer .blocks .sn_icons img {
   font-size: 1.042vw;
   font-weight: normal;
   line-height: 1.40625vw;
+}
+
+.modal.popup_blc .drop_zone .upload {
+  padding: 0.65833vw 1.64582vw;
+  background-color: #1E92FE;
+  border: 0.06583vw solid #1E92FE;
+  border-radius: 0.365vw;
+  color: white;
 }
 
 .modal.popup_blc.new_post {
@@ -2851,8 +2863,13 @@ footer .blocks .sn_icons img {
   border-radius: 0.26vw;
   color: #ffffff;
   white-space: nowrap;
+  cursor: pointer;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
+}
+
+.modal.popup_blc.save_to .button_blc .button:hover {
+  background-color: #61B2FE;
 }
 
 .modal.popup_blc.save_to .button_blc .button:not(.blk) {
@@ -2967,11 +2984,20 @@ footer .blocks .sn_icons img {
 }
 
 .modal.change_picture form .upload__file .drop_zone {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   text-align: center;
   padding: 1.667vw;
   margin-bottom: 0;
-  min-height: initial;
+  min-height: 8.55826vw;
 }
 
 .modal.change_picture form .upload__file .drop_zone p {
@@ -3017,7 +3043,19 @@ footer .blocks .sn_icons img {
 }
 
 .modal.change_picture form .button_blc {
-  margin-top: 2.292vw;
+  margin-top: 4vw;
+  width: 100%;
+}
+
+.modal.change_picture form .button_blc .delete {
+  margin-bottom: 0;
+  background-color: transparent;
+}
+
+.modal.change_picture form .button_blc .delete:hover {
+  background-color: #00193F;
+  border-color: #00193F;
+  color: #ffffff;
 }
 
 .modal.change_picture form input[type=range]:focus {
@@ -4241,8 +4279,14 @@ ul.professionals, ul.subprofessionals {
   border-radius: 0.26vw;
   color: #ffffff;
   white-space: nowrap;
+  cursor: pointer;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
+}
+
+.button_blc .button:hover {
+  background-color: #1e92fec2;
+  border-color: #1e92fec2;
 }
 
 .button_blc a.button.blk {

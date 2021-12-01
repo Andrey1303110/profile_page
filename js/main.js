@@ -75,7 +75,6 @@ $(document).ready(function(){
     })
 
 
-
     $("form .select p").on("click", function () {
       $(this).next("ul.professionals").slideToggle();
       $(".owl-stage-outer").addClass("open");
@@ -110,7 +109,25 @@ $(document).ready(function(){
       let select_val = $(this).parent(".selected").attr("data-value");
       $('.select.multi .sub_professionals input[value="' + select_val + '"]').prop("checked", false);
       $(this).parent().remove();
+
+      set_skills();
     });
+  
+    function set_skills() {
+      let skills = $('.skills_edit .multi_selected_items .selected');
+      let all_skills = $('.featured-skills_block .inline');
+      for (let j = 0; j < all_skills.length; j++) {
+        all_skills[j].remove();
+      }
+      for (let i = 0; i < skills.length; i++) {
+        $('.featured-skills_block .data_part').append(`<div class='inline'><p>${skills[i].innerHTML}</p></div>`);
+      }
+    }
+
+    $('#about_edit textarea')[0].value = $('.about_block .data_part p')[0].textContent;
+
+    $('#about_edit textarea').on('input', function(){
+      $('.about_block .data_part p')[0].textContent = '';
+      $('.about_block .data_part p')[0].textContent = $('#about_edit textarea')[0].value; 
+    })
 });
-
-

@@ -331,9 +331,9 @@
 			color: #ffffff;
 			background-color: #1E92FE;
 			padding: 0.573vw 0.885vw 0.521vw 0.729vw;
-			margin-top: -1.198vw;
+			margin-top: 0;
 			margin-right: 1.146vw;
-			margin-bottom: 1.875vw;
+			margin-bottom: .75vw;
 			border-radius: 0.365vw;
 			transition: all 0.3s linear;
 			span {
@@ -435,7 +435,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-evenly;
-		min-height: 7.708vw;
+		min-height: 7vw;
 		background: #E8F2FF;
 		border-radius: 0.365vw;
 		margin-bottom: 0.573vw;
@@ -449,6 +449,13 @@
 			font-size: 1.042vw;
 			font-weight: normal;
 			line-height: 1.40625vw;
+		}
+		.upload {
+			padding: 10/$width*100vw 25/$width*100vw;
+			background-color: #1E92FE;
+			border: 1/$width*100vw solid #1E92FE;
+			border-radius: 0.365vw;
+			color: white;
 		}
 	}
 }
@@ -687,17 +694,21 @@
 		padding-right: 0.677vw;
 		text-align: right;
 		.button {
-      display: inline-block;
-      font-size: 0.9375vw;
-      font-weight: bold;
-      line-height: 1.25vw;
-      padding: 0.677vw 1.40625vw 0.521vw;
-      background-color: #1E92FE;
-      border: 1px solid #1E92FE;
-      border-radius: 0.26vw;
-      color: #ffffff;
-      white-space: nowrap;
-      transition: all 0.3s linear;
+			display: inline-block;
+			font-size: 0.9375vw;
+			font-weight: bold;
+			line-height: 1.25vw;
+			padding: 0.677vw 1.40625vw 0.521vw;
+			background-color: #1E92FE;
+			border: 1px solid #1E92FE;
+			border-radius: 0.26vw;
+			color: #ffffff;
+			white-space: nowrap;
+			cursor: pointer;
+			transition: all 0.3s linear;
+			&:hover {
+				background-color: #61B2FE;
+			}
 			&:not(.blk) {
 				border: none;
 			}
@@ -787,11 +798,13 @@
 			box-shadow: 0 0.104vw 0.46875vw rgba(0, 0, 0, 0.14221);
 			border-radius: 0.365vw;
 			.drop_zone {
-				display: block;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
 				text-align: center;
 				padding: 1.667vw;
 				margin-bottom: 0;
-				min-height: initial;
+				min-height: 130/$width*100vw;
 				p {
 					margin-bottom: 0.729vw;
 				}
@@ -826,7 +839,17 @@
 			}
 		}
 		.button_blc {
-			margin-top: 2.292vw;
+			margin-top: 4vw;
+			width: 100%;
+			.delete {
+				margin-bottom: 0;
+				background-color: transparent;
+				&:hover {
+					background-color: #00193F;
+					border-color: #00193F;
+					color: #ffffff;
+				}
+			}
 		}
 		input[type=range] {
 			&:focus {
@@ -1862,7 +1885,12 @@ ul.professionals, ul.subprofessionals {
 		border-radius: 0.26vw;
 		color: #ffffff;
 		white-space: nowrap;
+		cursor: pointer;
 		transition: all 0.3s linear;
+		&:hover {
+			background-color: #1e92fec2;
+			border-color: #1e92fec2;
+		}
 	}
 	a.button.blk {
 		padding: 0 18/$width*100vw;
