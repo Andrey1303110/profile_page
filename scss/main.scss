@@ -773,10 +773,14 @@ section {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+                align-items: center;
                 height: 100%;
             }
             .head {
                 display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
                 p {
                     margin-right: auto;
                     font-size: 14/$width*100vw;
@@ -786,6 +790,7 @@ section {
                 }
                 img {
                     width: 20/$width*100vw;
+                    height: 20/$width*100vw;
                     border-radius: 50%;
                 }
             }
@@ -802,13 +807,14 @@ section {
                 border: 3/$width*100vw solid #ffffff;
                 margin-bottom: 5.5/$width*100vw;
                 cursor: pointer;
-                margin: 0 auto;
                 img {
                     width: 50%;
                     transform: translateY(10%);
                 }
             }
             .time_duration {
+                width: 100%;
+                text-align: start;
                 font-size: 12/$width*100vw;
                 line-height: 16/$width*100vw;
                 color: #202631;

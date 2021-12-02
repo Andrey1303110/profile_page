@@ -1040,6 +1040,9 @@ section .talent_block .interact_content .container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100%;
 }
 
@@ -1047,6 +1050,14 @@ section .talent_block .interact_content .head {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
 }
 
 section .talent_block .interact_content .head p {
@@ -1059,6 +1070,7 @@ section .talent_block .interact_content .head p {
 
 section .talent_block .interact_content .head img {
   width: 1.31666vw;
+  height: 1.31666vw;
   border-radius: 50%;
 }
 
@@ -1085,7 +1097,6 @@ section .talent_block .interact_content .middle {
   border: 0.1975vw solid #ffffff;
   margin-bottom: 0.36208vw;
   cursor: pointer;
-  margin: 0 auto;
 }
 
 section .talent_block .interact_content .middle img {
@@ -1095,6 +1106,8 @@ section .talent_block .interact_content .middle img {
 }
 
 section .talent_block .interact_content .time_duration {
+  width: 100%;
+  text-align: start;
   font-size: 0.78999vw;
   line-height: 1.05332vw;
   color: #202631;
