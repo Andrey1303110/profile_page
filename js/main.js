@@ -130,18 +130,44 @@ $(document).ready(function(){
       let select_val = $(this).parent(".selected").attr("data-value");
       $('.select.multi .sub_professionals input[value="' + select_val + '"]').prop("checked", false);
       $(this).parent().remove();
-
-      set_skills();
     });
+
+    $('#lead_finder input[type="submit"], #team_builder input[type="submit"]').click(function(){
+      set_skills();
+      set_services();
+      set_people();
+    })
   
     function set_skills() {
-      let skills = $('.skills_edit .multi_selected_items .selected');
-      let all_skills = $('.featured-skills_block .inline');
-      for (let j = 0; j < all_skills.length; j++) {
-        all_skills[j].remove();
+      let new_skills = $('.skills_edit .multi_selected_items .selected');
+      let old_skills = $('.featured-skills_block .inline');
+      for (let j = 0; j < old_skills.length; j++) {
+        old_skills[j].remove();
       }
-      for (let i = 0; i < skills.length; i++) {
-        $('.featured-skills_block .data_part').append(`<div class='inline'><p>${skills[i].innerHTML}</p></div>`);
+      for (let i = 0; i < new_skills.length; i++) {
+        $('.featured-skills_block .data_part').append(`<div class='inline'><p>${new_skills[i].innerHTML}</p></div>`);
+      }
+    }
+
+    function set_services() {
+      let new_skills = $('#lead_finder .multi_selected_items .selected');
+      let old_skills = $('.services_block .inline');
+      for (let j = 0; j < old_skills.length; j++) {
+        old_skills[j].remove();
+      }
+      for (let i = 0; i < new_skills.length; i++) {
+        $('.services_block .data_part').append(`<div class='inline'><p>${new_skills[i].innerHTML}</p></div>`);
+      }
+    }
+
+    function set_people() {
+      let new_skills = $("#team_builder .multi_selected_items").eq(1).find('.selected');
+      let old_skills = $('.people_need_block .inline');
+      for (let j = 0; j < old_skills.length; j++) {
+        old_skills[j].remove();
+      }
+      for (let i = 0; i < new_skills.length; i++) {
+        $('.people_need_block .data_part').append(`<div class='inline'><p>${new_skills[i].innerHTML}</p></div>`);
       }
     }
 
@@ -200,5 +226,13 @@ $(document).ready(function(){
     }
 
     $('#edit_profile input.button').on('click', set_profile_data);
+
+    $('.services_block .edit').click(function(){
+      $("a[href='#lead_finder']")[0].click();
+    })
+    $('.people_need_block .edit').click(function(){
+      $("a[href='#team_builder']")[0].click();
+    })
+  
 
 });
