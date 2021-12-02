@@ -173,7 +173,7 @@ $(document).ready(function(){
 
     $('#about_edit textarea')[0].value = $('.about_block .data_part p')[0].textContent;
 
-    $('#about_edit textarea').on('input', function(){
+    $('#about_edit input.button').click(function(){
       $('.about_block .data_part p')[0].textContent = '';
       $('.about_block .data_part p')[0].textContent = $('#about_edit textarea')[0].value; 
     })
