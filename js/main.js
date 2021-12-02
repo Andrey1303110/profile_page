@@ -82,7 +82,7 @@ $(document).ready(function(){
     })
 
     $('.drop-down.main .dropdown').on("click", function() {
-      $(this).parent().find('.drop-down').slideUp();
+      //$(this).parent().find('.drop-down').slideUp();
       $(this).find('.drop-down').slideToggle();
     })
 
