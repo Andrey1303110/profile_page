@@ -767,8 +767,8 @@
             <p class="change_pic">Change Background Picture</p>
         </div>
         <a class="profile_photo modal_open" href="#change_picture"><img alt="" src="img/Bitmap.jpg" /></a><label>First
-            Name*<input placeholder="First Name Here" required="" type="text" /></label><label>Last Name*<input
-                placeholder="Last Name Here" required="" type="text" /></label>
+            Name*<input placeholder="First Name Here" required="" type="text" value="Alison"/></label><label>Last Name*<input
+                placeholder="Last Name Here" required="" type="text" value="Doe"/></label>
         <div class="button_blc">
             <input class="button" type="submit" value="Save" />
             <a class="button blk" href="#" rel="modal:close">Cancel</a>
@@ -1779,7 +1779,7 @@
             <p>
                 Profile Address
             </p>
-            <a href="">musiclinkup.com/up/profilename</a>
+            <a href="">https://musiclinkup.com/up/profilename</a>
         </li>
         <li>
             <p>
@@ -1791,13 +1791,13 @@
             <p>
                 Twitter
             </p>
-            <a href="">twitter.com/profilename</a>
+            <a href="">https://twitter.com/profilename</a>
         </li>
         <li>
             <p>
                 Website
             </p>
-            <a href="">www.companywebsite.com</a>
+            <a href="">https://www.companywebsite.com</a>
         </li>
         <li>
             <p>
@@ -1816,11 +1816,11 @@
         Edit Contact Info
     </p>
     <form>
-        <label>Profile Address<input type="url" /></label>
-        <label>Phone<input type="tel" /></label>
-        <label>Website<input type="url" /></label>
-        <label>Email<input type="email" /></label>
-        <label>Twitter<input type="url" /></label>
+        <label>Profile Address<input class="address" type="url" value="https://musiclinkup.com/up/profilename"/></label>
+        <label>Phone<input name="phone" type="tel" value="1836128638-3103"/></label>
+        <label>Twitter<input name="twitter" type="url" value="https://twitter.com/profilename"/></label>
+        <label>Website<input name="website" type="url" value="https://www.companywebsite.com"/></label>
+        <label>Email<input name="email" type="email" value="name@companywebsite.com"/></label>
         <div class="button_blc">
             <input class="button" type="submit" value="Save" /><a class="button blk" href="#" rel="modal:close">Discard
                 changes</a>
@@ -3111,7 +3111,7 @@
             <input accept="image/*" hidden="" type="file" /><a class="button upload" href="" rel="nofollow">Browse
                 Files</a>
         </div>
-        <input class="button" type="submit" value="Upload" />
+        <input class="button" type="submit" value="Upload" rel="modal:close"/>
     </form>
     <p class="subtitle">
         Edit the existing photos

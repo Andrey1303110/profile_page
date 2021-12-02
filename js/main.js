@@ -179,6 +179,26 @@ $(document).ready(function(){
     $('.title_experince input').on('change', set_experince_titles);
     $('.company_experince input').on('change', set_experince_titles);
 
+    function set_contacts_data() {
+      for (let i = 0; i < $('#contact_info_edit_form input').length-1; i++) {
+        $('#contact_info_edit ul li a')[i].textContent = $('#contact_info_edit_form input')[i].value;
+      }
+    }
 
+    $('#contact_info_edit_form input').on('change', set_contacts_data);
+
+    $('input[type="submit"]').click(function(event) {
+      event.preventDefault();
+      $(this)[0].nextElementSibling.click();
+    });
+
+    function set_profile_data() {
+      for (let i = 0; i < $('.profile_name').length; i++ ) {
+        $('.profile_name')[i].textContent = $('#edit_profile input')[1].value + ' ' + $('#edit_profile input')[2].value;
+      }
+      $('.top_p span')[0].textContent = $('#edit_profile input')[1].value;
+    }
+
+    $('#edit_profile input.button').on('click', set_profile_data);
 
 });
