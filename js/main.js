@@ -239,5 +239,13 @@ $(document).ready(function(){
       $("a[href='#team_builder']")[0].click();
     })
   
+    $('.add').click(function(){
+      $(this).addClass('active');
+      $(this).parent().parent().fadeOut(750, function() {$(this).remove()} );
+      console.log($(this).parent().parent().parent()[0].childElementCount);
+      if($(this).parent().parent().parent()[0].childElementCount <= 1) {
+        $(this).parent().parent().parent().parent().fadeOut(750, function() {$(this).remove()} );
+      }
+    })
 
 });
