@@ -630,7 +630,7 @@ section {
                   border-bottom: 1.5/$width*100vw solid #E8ECF4;
                 }
               }
-              p {
+              p, a {
                 position: relative;
                 text-align: start;
                 padding-left: 10/$width*100vw;
@@ -660,8 +660,9 @@ section {
               .section{
                 display: none;
                 padding-bottom: 8/$width*100vw;
-                p {
+                p, a {
                   font-size: 14/$width*100vw;
+                  display: block;
                   &::after {
                     content: "";
                     position: absolute;

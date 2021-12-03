@@ -132,7 +132,12 @@ $(document).ready(function(){
       $(this).parent().remove();
     });
 
-    $('#lead_finder input[type="submit"], #team_builder input[type="submit"]').click(function(){
+    $('.drop-down .section p').click(function(event){
+      event.preventDefault();
+      console.log(this);
+    })
+
+    $('#lead_finder input[type="submit"], #team_builder input[type="submit"], #skills_edit input[type="submit"]').click(function(){
       set_skills();
       set_services();
       set_people();

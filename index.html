@@ -137,22 +137,22 @@
                         <div class="dropdown">
                             <p class="title">about</p>
                             <div class="drop-down section">
-                                <p>Summary</p>
+                                <a href="#about_edit">Summary</a>
                             </div>
                         </div>
                         <div class="dropdown">
                             <p class="title">featured</p>
                             <div class="drop-down section">
-                                <p>Posts</p>
-                                <p>Articles</p>
-                                <p>Links</p>
-                                <p>Media</p>
+                                <a href="/">Posts</a>
+                                <a href="/">Articles</a>
+                                <a href="/">Links</a>
+                                <a href="/">Media</a>
                             </div>
                         </div>
                         <div class="dropdown">
                             <p class="title">Skills</p>
                             <div class="drop-down section">
-                                <p>Skills</p>
+                                <a href="#skills_edit">Skills</a>
                             </div>
                         </div>
                     </div>
@@ -3171,7 +3171,316 @@
         Edit Featuring Skills Section
     </p>
     <form>
-        <label>Skills<input placeholder="Skill (Ex. Classical)" type="text" /></label>
+        <div class="select multi">
+            <p>
+                — You can choose multiple options —
+            </p>
+            <ul class="professionals">
+                <li>
+                    Music In Film
+                    <ul class="sub_professionals">
+                        <li>
+                            <label>Production Music Writer (TV Music)<input name="professions[]" type="checkbox"
+                                    value="1" /></label>
+                        </li>
+                        <li>
+                            <label>Music Supervisors<input name="professions[]" type="checkbox" value="2" /></label>
+                        </li>
+                        <li>
+                            <label>Film Music Editor<input name="professions[]" type="checkbox" value="3" /></label>
+                        </li>
+                        <li>
+                            <label>TV Music Writer<input name="professions[]" type="checkbox" value="4" /></label>
+                        </li>
+                        <li>
+                            <label>Music Licensing Consultant for Films<input name="professions[]" type="checkbox"
+                                    value="5" /></label>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Performing & Writing Careers
+                    <ul class="sub_professionals">
+                        <li>
+                            <label>Orchestrator<input name="professions[]" type="checkbox" value="6" /></label>
+                        </li>
+                        <li>
+                            <label>Songwriter<input name="professions[]" type="checkbox" value="7" /></label>
+                        </li>
+                        <li>
+                            <label>Singer<input name="professions[]" type="checkbox" value="8" /></label>
+                        </li>
+                        <li>
+                            <label>Lyricist<input name="professions[]" type="checkbox" value="9" /></label>
+                        </li>
+                        <li>
+                            <label>Recording Group (or Band)<input name="professions[]" type="checkbox"
+                                    value="10" /></label>
+                        </li>
+                        <li>
+                            <label>Background Singer<input name="professions[]" type="checkbox" value="11" /></label>
+                        </li>
+                        <li>
+                            <label>Jingle Writer<input name="professions[]" type="checkbox" value="12" /></label>
+                        </li>
+                        <li>
+                            <label>Composer<input name="professions[]" type="checkbox" value="13" /></label>
+                        </li>
+                        <li>
+                            <label>Session Musician<input name="professions[]" type="checkbox" value="14" /></label>
+                        </li>
+                        <li>
+                            <label>Accompanist<input name="professions[]" type="checkbox" value="15" /></label>
+                        </li>
+                        <li>
+                            <label>Cruise Ship Musician<input name="professions[]" type="checkbox" value="16" /></label>
+                        </li>
+                        <li>
+                            <label>Video Game Composer<input name="professions[]" type="checkbox" value="17" /></label>
+                        </li>
+                        <li>
+                            <label>Sound Designer<input name="professions[]" type="checkbox" value="18" /></label>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Recording Career
+                    <ul class="sub_professionals">
+                        <li>
+                            <label>Recording Producer<input name="professions[]" type="checkbox" value="19" /></label>
+                        </li>
+                        <li>
+                            <label>Recording Artist<input name="professions[]" type="checkbox" value="20" /></label>
+                        </li>
+                        <li>
+                            <label>Recording Engineer<input name="professions[]" type="checkbox" value="21" /></label>
+                        </li>
+                        <li>
+                            <label>Assistant Engineer<input name="professions[]" type="checkbox" value="22" /></label>
+                        </li>
+                        <li>
+                            <label>Mix Engineer<input name="professions[]" type="checkbox" value="23" /></label>
+                        </li>
+                        <li>
+                            <label>Arranger<input name="professions[]" type="checkbox" value="24" /></label>
+                        </li>
+                        <li>
+                            <label>Studio Manager<input name="professions[]" type="checkbox" value="25" /></label>
+                        </li>
+                        <li>
+                            <label>Audio Mastering Engineer<input name="professions[]" type="checkbox"
+                                    value="26" /></label>
+                        </li>
+                        <li>
+                            <label>General Manager<input name="professions[]" type="checkbox" value="27" /></label>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    The Record Industry
+                    <ul class="sub_professionals">
+                        <li>
+                            <label>Director of A&amp;R<input name="professions[]" type="checkbox" value="28" /></label>
+                        </li>
+                        <li>
+                            <label>Promotion Manager<input name="professions[]" type="checkbox" value="29" /></label>
+                        </li>
+                        <li>
+                            <label>Artists Relations and Development<input name="professions[]" type="checkbox"
+                                    value="30" /></label>
+                        </li>
+                        <li>
+                            <label>Music Marketing Representative<input name="professions[]" type="checkbox"
+                                    value="31" /></label>
+                        </li>
+                        <li>
+                            <label>Consumer Researcher<input name="professions[]" type="checkbox" value="32" /></label>
+                        </li>
+                        <li>
+                            <label>Regional Sales Manager<input name="professions[]" type="checkbox"
+                                    value="33" /></label>
+                        </li>
+                        <li>
+                            <label>Company Marketing Manager<input name="professions[]" type="checkbox"
+                                    value="34" /></label>
+                        </li>
+                        <li>
+                            <label>Mixtape Host<input name="professions[]" type="checkbox" value="35" /></label>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Website and Graphic Design
+                    <ul class="sub_professionals">
+                        <li>
+                            <label>Website Developer<input name="professions[]" type="checkbox" value="36" /></label>
+                        </li>
+                        <li>
+                            <label>Graphic Designer<input name="professions[]" type="checkbox" value="37" /></label>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Music Business
+                    <ul class="sub_professionals">
+                        <li>
+                            <label>Licensing Representative<input name="professions[]" type="checkbox"
+                                    value="38" /></label>
+                        </li>
+                        <li>
+                            <label>Business Manager<input name="professions[]" type="checkbox" value="39" /></label>
+                        </li>
+                        <li>
+                            <label>Music Business Accountant<input name="professions[]" type="checkbox"
+                                    value="40" /></label>
+                        </li>
+                        <li>
+                            <label>Entertainment Attorney<input name="professions[]" type="checkbox"
+                                    value="41" /></label>
+                        </li>
+                        <li>
+                            <label>Booking Agent<input name="professions[]" type="checkbox" value="42" /></label>
+                        </li>
+                        <li>
+                            <label>Music Publisher<input name="professions[]" type="checkbox" value="43" /></label>
+                        </li>
+                        <li>
+                            <label>Artist Manager<input name="professions[]" type="checkbox" value="44" /></label>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Touring, Arena & Clubs
+                    <ul class="sub_professionals">
+                        <li>
+                            <label>Concert Production Manager<input name="professions[]" type="checkbox"
+                                    value="45" /></label>
+                        </li>
+                        <li>
+                            <label>Theater Manager<input name="professions[]" type="checkbox" value="46" /></label>
+                        </li>
+                        <li>
+                            <label>Stage Manager<input name="professions[]" type="checkbox" value="47" /></label>
+                        </li>
+                        <li>
+                            <label>Publicist<input name="professions[]" type="checkbox" value="48" /></label>
+                        </li>
+                        <li>
+                            <label>Club Manager<input name="professions[]" type="checkbox" value="49" /></label>
+                        </li>
+                        <li>
+                            <label>Bodyguard<input name="professions[]" type="checkbox" value="50" /></label>
+                        </li>
+                        <li>
+                            <label>Road Manager<input name="professions[]" type="checkbox" value="51" /></label>
+                        </li>
+                        <li>
+                            <label>Tour Director<input name="professions[]" type="checkbox" value="52" /></label>
+                        </li>
+                        <li>
+                            <label>Festival Producer<input name="professions[]" type="checkbox" value="53" /></label>
+                        </li>
+                        <li>
+                            <label>Event Technician<input name="professions[]" type="checkbox" value="54" /></label>
+                        </li>
+                        <li>
+                            <label>Instrument Technicians<input name="professions[]" type="checkbox"
+                                    value="55" /></label>
+                        </li>
+                        <li>
+                            <label>Lighting Technician<input name="professions[]" type="checkbox" value="56" /></label>
+                        </li>
+                        <li>
+                            <label>Advance Agent<input name="professions[]" type="checkbox" value="57" /></label>
+                        </li>
+                        <li>
+                            <label>Tour Driver<input name="professions[]" type="checkbox" value="58" /></label>
+                        </li>
+                        <li>
+                            <label>Club DJ<input name="professions[]" type="checkbox" value="59" /></label>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Public Relations & Advertising
+                    <ul class="sub_professionals">
+                        <li>
+                            <label>Publicist &amp; P.R. consultant<input name="professions[]" type="checkbox"
+                                    value="60" /></label>
+                        </li>
+                        <li>
+                            <label>Music Journalists<input name="professions[]" type="checkbox" value="61" /></label>
+                        </li>
+                        <li>
+                            <label>Music Blogger<input name="professions[]" type="checkbox" value="62" /></label>
+                        </li>
+                        <li>
+                            <label>Music Critic<input name="professions[]" type="checkbox" value="63" /></label>
+                        </li>
+                        <li>
+                            <label>Music Historian<input name="professions[]" type="checkbox" value="64" /></label>
+                        </li>
+                        <li>
+                            <label>Photographer<input name="professions[]" type="checkbox" value="65" /></label>
+                        </li>
+                        <li>
+                            <label>Celebrity Stylist<input name="professions[]" type="checkbox" value="66" /></label>
+                        </li>
+                        <li>
+                            <label>Music Promoter<input name="professions[]" type="checkbox" value="67" /></label>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Music Education
+                    <ul class="sub_professionals">
+                        <li>
+                            <label>Music Instructor<input name="professions[]" type="checkbox" value="68" /></label>
+                        </li>
+                        <li>
+                            <label>Music Teacher<input name="professions[]" type="checkbox" value="69" /></label>
+                        </li>
+                        <li>
+                            <label>Professor of Musicology<input name="professions[]" type="checkbox"
+                                    value="70" /></label>
+                        </li>
+                        <li>
+                            <label>Instrument Teacher<input name="professions[]" type="checkbox" value="71" /></label>
+                        </li>
+                        <li>
+                            <label>Music Administrator<input name="professions[]" type="checkbox" value="72" /></label>
+                        </li>
+                        <li>
+                            <label>Music Librarian<input name="professions[]" type="checkbox" value="73" /></label>
+                        </li>
+                        <li>
+                            <label>Music Therapist<input name="professions[]" type="checkbox" value="74" /></label>
+                        </li>
+                        <li>
+                            <label>Voice Therapist<input name="professions[]" type="checkbox" value="75" /></label>
+                        </li>
+                        <li>
+                            <label>Speech Pathologist<input name="professions[]" type="checkbox" value="76" /></label>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Radio & Television
+                    <ul class="sub_professionals">
+                        <li>
+                            <label>Press Agent, PR Person, Staff Publicist<input name="professions[]" type="checkbox"
+                                    value="77" /></label>
+                        </li>
+                        <li>
+                            <label>Radio Music Director<input name="professions[]" type="checkbox" value="78" /></label>
+                        </li>
+                        <li>
+                            <label>On Air Personality<input name="professions[]" type="checkbox" value="79" /></label>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
         <div class="multi_selected_items">
             <a class="selected">Assistant Engineer<span></span></a>
             <a class="selected">Artists Relations and Development<span></span></a>

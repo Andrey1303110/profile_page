@@ -777,7 +777,7 @@ section .left_section .top_buttons .drop-down .dropdown:not(:last-child) {
   border-bottom: 0.09875vw solid #E8ECF4;
 }
 
-section .left_section .top_buttons .drop-down p {
+section .left_section .top_buttons .drop-down p, section .left_section .top_buttons .drop-down a {
   position: relative;
   text-align: start;
   padding-left: 0.65833vw;
@@ -812,11 +812,12 @@ section .left_section .top_buttons .drop-down .section {
   padding-bottom: 0.52666vw;
 }
 
-section .left_section .top_buttons .drop-down .section p {
+section .left_section .top_buttons .drop-down .section p, section .left_section .top_buttons .drop-down .section a {
   font-size: 0.92166vw;
+  display: block;
 }
 
-section .left_section .top_buttons .drop-down .section p::after {
+section .left_section .top_buttons .drop-down .section p::after, section .left_section .top_buttons .drop-down .section a::after {
   content: "";
   position: absolute;
   top: -0.65833vw;
