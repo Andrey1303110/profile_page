@@ -365,7 +365,7 @@ header {
                   }
                 }
                 &:not(:last-child) {
-                  border-bottom: 1/$width*100vw solid #E8ECF4;
+                  border-bottom: 1.5/$width*100vw solid #E8ECF4;
                 }
                 img {
                   position: static;
@@ -399,10 +399,15 @@ header {
             //padding: 10/$width*100vw 0;
         }
         .notification {
-            width: 1.31vw;
-            height: 1.38vw;
+            width: 1.3vw;
+            height: 1.4vw;
             margin-right: 1vw;
             position: relative;
+            &:nth-child(2) {
+                img {
+                    top: 20%;
+                }
+            }
             img {
                 position: absolute;
                 top: 10%;
@@ -468,7 +473,7 @@ header {
                 }
               }
               &:not(:last-child) {
-                border-bottom: 1/$width*100vw solid #E8ECF4;
+                border-bottom: 1.5/$width*100vw solid #E8ECF4;
               }
             }
         }
@@ -622,7 +627,7 @@ section {
               }
               .dropdown {
                 &:not(:last-child) {
-                  border-bottom: 1/$width*100vw solid #E8ECF4;
+                  border-bottom: 1.5/$width*100vw solid #E8ECF4;
                 }
               }
               p {
@@ -854,7 +859,7 @@ section {
         .buttons {
             display: flex;
             flex-direction: row;
-            justify-content: end;
+            justify-content: flex-end;
             margin-left: 1.875vw;
             button {
                 font-size: 17/$width*100vw;
@@ -1251,7 +1256,7 @@ section {
                 display: inline-block;
                 padding: 10/$width*100vw 15/$width*100vw;
                 font-size: 14/$width*100vw;
-                font-weight: 600;
+                font-weight: 700;
                 line-height: 20/$width*100vw;
                 color: #202631;
                 background: #E8F2FF;
@@ -1419,6 +1424,9 @@ footer {
                 width: 21.5/$width*100vw;
                 height: 21.5/$width*100vw;
                 margin-right: 0;
+                &:nth-child(1) {
+                    transform: translateY(-2/$width*100vw);
+                }
                 div {
                     width: 2vw;
                     height: 2vw;
@@ -1689,7 +1697,7 @@ footer {
             .item {
                 width: 94%;
                 padding: 14/$width*100vw 13/$width*100vw;
-                border-bottom: 1.5/$width*100vw solid #E8ECF4;
+                border-bottom: 1.75/$width*100vw solid #E8ECF4;
                 div p {
                     &:nth-child(1) {
                         font-size: 15/$width*100vw;

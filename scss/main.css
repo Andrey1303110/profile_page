@@ -448,7 +448,7 @@ header nav li .sub_work li:hover a {
 }
 
 header nav li .sub_work li:not(:last-child) {
-  border-bottom: 0.06583vw solid #E8ECF4;
+  border-bottom: 0.09875vw solid #E8ECF4;
 }
 
 header nav li .sub_work li img {
@@ -493,10 +493,14 @@ header .header_right .avatar {
 }
 
 header .header_right .notification {
-  width: 1.31vw;
-  height: 1.38vw;
+  width: 1.3vw;
+  height: 1.4vw;
   margin-right: 1vw;
   position: relative;
+}
+
+header .header_right .notification:nth-child(2) img {
+  top: 20%;
 }
 
 header .header_right .notification img {
@@ -572,7 +576,7 @@ header .header_right .drop_down_profile_menu .block:not(:first-child):hover {
 }
 
 header .header_right .drop_down_profile_menu .block:not(:last-child) {
-  border-bottom: 0.06583vw solid #E8ECF4;
+  border-bottom: 0.09875vw solid #E8ECF4;
 }
 
 section {
@@ -770,7 +774,7 @@ section .left_section .top_buttons .drop-down .drop-down {
 }
 
 section .left_section .top_buttons .drop-down .dropdown:not(:last-child) {
-  border-bottom: 0.06583vw solid #E8ECF4;
+  border-bottom: 0.09875vw solid #E8ECF4;
 }
 
 section .left_section .top_buttons .drop-down p {
@@ -1087,7 +1091,7 @@ section .profile-check_block .buttons {
           flex-direction: row;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
-          justify-content: end;
+          justify-content: flex-end;
   margin-left: 1.875vw;
 }
 
@@ -1635,7 +1639,7 @@ section .right_section .data_part .inline {
   display: inline-block;
   padding: 0.65833vw 0.98749vw;
   font-size: 0.92166vw;
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.31666vw;
   color: #202631;
   background: #E8F2FF;
@@ -1861,6 +1865,10 @@ footer .blocks .sn_icons img {
     width: 5.05882vw;
     height: 5.05882vw;
     margin-right: 0;
+  }
+  header .header_right .notification:nth-child(1) {
+    -webkit-transform: translateY(-0.47059vw);
+            transform: translateY(-0.47059vw);
   }
   header .header_right .notification div {
     width: 2vw;
@@ -2147,7 +2155,7 @@ footer .blocks .sn_icons img {
   section .contacts_block .data_part .item, section .interests_block .data_part .item, section .people_viewed_block .data_part .item {
     width: 94%;
     padding: 3.29412vw 3.05882vw;
-    border-bottom: 0.35294vw solid #E8ECF4;
+    border-bottom: 0.41176vw solid #E8ECF4;
   }
   section .contacts_block .data_part .item div p:nth-child(1), section .interests_block .data_part .item div p:nth-child(1), section .people_viewed_block .data_part .item div p:nth-child(1) {
     font-size: 3.52941vw;
