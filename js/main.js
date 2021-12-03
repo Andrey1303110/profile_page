@@ -249,7 +249,7 @@ $(document).ready(function(){
     $('.add').click(function(){
       $(this).addClass('active');
       $(this).parent().parent().fadeOut(750, function() {$(this).remove()} );
-      console.log($(this).parent().parent().parent()[0].childElementCount);
+      connections_nums.textContent = connections_nums.textContent * 1 + 1;
       if($(this).parent().parent().parent()[0].childElementCount <= 1) {
         $(this).parent().parent().parent().parent().fadeOut(750, function() {$(this).remove()} );
       }
