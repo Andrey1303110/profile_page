@@ -245,6 +245,8 @@ $(document).ready(function(){
     $('.people_need_block .edit').click(function(){
       $("a[href='#team_builder']")[0].click();
     })
+
+    connections_nums.textContent = Math.round(Math.random()*50);
   
     $('.add').click(function(){
       $(this).addClass('active');
