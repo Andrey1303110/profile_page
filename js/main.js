@@ -228,7 +228,14 @@ $(document).ready(function(){
         $('.profile_name')[i].textContent = $('#edit_profile input')[1].value + ' ' + $('#edit_profile input')[2].value;
       }
       $('.top_p span')[0].textContent = $('#edit_profile input')[1].value;
+      $('.bg_top').css('background-image', `url(${blah.src})`);
     }
+
+    $('#change_picture input[type="submit"]').click(function(){
+      $('.avatar')[1].src = $('#new_avatar')[0].src;
+      $('.avatar')[2].src = $('#new_avatar')[0].src;
+      $('.avatar')[16].src = $('#new_avatar')[0].src;
+    })
 
     $('#edit_profile input.button').on('click', set_profile_data);
 
@@ -247,5 +254,29 @@ $(document).ready(function(){
         $(this).parent().parent().parent().parent().fadeOut(750, function() {$(this).remove()} );
       }
     })
+
+    var imgInp, blah;
+
+    $(document).on("click", ".add_pic__pic_blc", function () {
+      if ($(this).hasClass("add_pic__pic_blc")) {
+        imgInp = $(this).find('input[type="file"]')[0];
+        imgInp.click();
+        blah = $(this).find("img")[0];
+        upPic(imgInp, blah);
+      } else {
+        imgInp = $(this).parents(".add_pic__pic_blc").find('input[type="file"]')[0];
+        imgInp.click();
+        blah = $(this).parents(".add_pic__pic_blc").find("img")[0];
+        upPic(imgInp, blah);
+      }
+    });
+    function upPic(imgInp, blah) {
+      imgInp.onchange = (evt) => {
+        const [file] = imgInp.files;
+        if (file) {
+          blah.src = URL.createObjectURL(file);
+        }
+      };
+    }
 
 });

@@ -765,8 +765,11 @@
             <picture><img alt="" id="blah" src="#" /></picture>
             <p class="change_pic">Change Background Picture</p>
         </div>
-        <a class="profile_photo modal_open" href="#change_picture"><img alt="" src="img/Bitmap.jpg" /></a><label>First
-            Name*<input placeholder="First Name Here" required="" type="text" value="Alison"/></label><label>Last Name*<input
+        <a class="profile_photo modal_open" href="#change_picture">
+            <img class="avatar" alt="" src="img/Bitmap.jpg" />
+        </a>
+        <label>First Name*<input placeholder="First Name Here" required="" type="text" value="Alison"/></label>
+        <label>Last Name*<input
                 placeholder="Last Name Here" required="" type="text" value="Doe"/></label>
         <div class="button_blc">
             <input class="button" type="submit" value="Save" />
@@ -790,7 +793,7 @@
 
         </div>
         <div class="crop_pic_result">
-            <img alt="" src="img/icons/profile_avatar.png" />
+            <img id='new_avatar' alt="" src="img/icons/profile_avatar.png" />
         </div>
         <div class="button_blc">
             <input class="button" type="submit" value="Save" />
