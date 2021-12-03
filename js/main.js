@@ -234,7 +234,7 @@ $(document).ready(function(){
     $('#change_picture input[type="submit"]').click(function(){
       $('.avatar')[1].src = $('#new_avatar')[0].src;
       $('.avatar')[2].src = $('#new_avatar')[0].src;
-      $('.avatar')[16].src = $('#new_avatar')[0].src;
+      $('.avatar')[$('.avatar').length-1].src = $('#new_avatar')[0].src;
     })
 
     $('#edit_profile input.button').on('click', set_profile_data);
