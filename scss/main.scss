@@ -546,7 +546,7 @@ section {
     .top {
         height: 435/$width*100vw;
         .bg_top {
-            background: url(../img/jobdes.png);
+            background: url(../img/jobdes.webp);
             background-position: center;
             background-size: cover;
             width: 100%;
@@ -1212,7 +1212,7 @@ section {
         }
         .starlight_block {
             position: relative;
-            background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.0574588) 31.28%, #000000 100%), url("../img/banner.jpg") no-repeat center center;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.0574588) 31.28%, #000000 100%), url("../img/banner.webp") no-repeat center center;
             background-size: cover;
             padding: 180/$width*100vw 16/$width*100vw 14/$width*100vw;
             p {

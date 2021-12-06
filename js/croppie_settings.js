@@ -25,8 +25,8 @@ $(document).ready(function () {
             url: "img/icons/profile_avatar.png",
             enableExif: true,
             viewport: {
-				type: "circle",
-			},
+                type: "circle",
+            },
         });
     }
 
