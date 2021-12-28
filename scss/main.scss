@@ -1194,8 +1194,8 @@ section {
                         cursor: pointer;
                         transition: .4s ease-in-out;
                         background-color: #1e92fe00;
-                        background-size: auto;
                         background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20.891' height='16.238' viewBox='0 0 20.891 16.238'%3E%3Cpath id='Path_4' data-name='Path 4' d='M0,4.931,7.108,12,18,0' transform='translate(1.41 1.344)' fill='none' stroke='%23fff' stroke-miterlimit='10' stroke-width='4'/%3E%3C/svg%3E%0A") center center no-repeat;
+                        background-size: 1.5vw;
                         &.active {
                             background-color: #1E92FE;
                             img {
